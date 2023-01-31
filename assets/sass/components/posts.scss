@@ -18,6 +18,9 @@
 }
 
 .post {
+  &-title {
+    font-size: 6vh;
+  }
   &-content {
     & > * {
       line-height: 1.5;

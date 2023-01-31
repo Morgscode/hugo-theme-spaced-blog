@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* ------- typography --------- */
 
 /* headings */
@@ -22,7 +22,7 @@
 }
 
 /* parapragh */
-.paragraph {
+p {
   font-size: $fontSize;
   color: $colorBlack;
   font-weight: 300;
@@ -37,10 +37,6 @@
   display: block;
   text-align: center;
   animation: bounce 1.75s infinite;
-}
-
-.introBounce {
-  animation: bounce 1.5s 6;
 }
 
 code {
@@ -66,6 +62,11 @@ code {
 ol,
 ul {
   list-style-position: inside;
+  li {
+    font-size: $fontSize;
+    color: $colorBlack;
+    font-weight: 300;
+  }
 }
 
 a {
@@ -80,6 +81,17 @@ a {
   .heading__primary,
   .heading__secondary {
     color: $colorWhite;
+  }
+
+  p {
+    color: $colorWhite;
+  }
+
+  ul,
+  ol {
+    li {
+      color: $colorWhite;
+    }
   }
 
   code {

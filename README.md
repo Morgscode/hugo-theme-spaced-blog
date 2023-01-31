@@ -2,10 +2,12 @@
 
 TODOS:
 
+- Add font files
 - Add mobile nav
+- Add styling for custom render image template
 - Add support for site main header image
 - Add support for site main intro text
-- Add support for post - main site header fallback
+- Add support for post main image - main site header fallback
 - Add support for default post author
 - Add support for author per post
 - Add support for multiple authors per post

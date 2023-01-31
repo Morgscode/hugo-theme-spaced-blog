@@ -17,7 +17,8 @@
   <main id="main">
     <section class="p-t-l p-b-l">
       <div class="_404 p-3">
-        <h1 class="_404-title">Page Not Found</h1>
+        <h1 class="_404-title m-b-m">Page Not Found</h1>
+        <p><a href="{{ "" | relURL }}">Go home</a></p>
       </div>
     </section>
   </main>
@@ -26,3 +27,11 @@
 </body>
 
 </html>
+
+{{ define "main"}}
+<main id="main">
+  <div>
+    <h1 id="title"><a href="{{ "" | relURL }}">Go Home</a></h1>
+  </div>
+</main>
+{{ end }}
