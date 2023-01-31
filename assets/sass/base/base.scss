@@ -16,7 +16,7 @@ body {
   width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
-  font-family: "Montserrat", sans-serif;
+  font-family: $bodyFont;
   color: $colorBlack;
   position: relative;
   background-color: $colorWhite;

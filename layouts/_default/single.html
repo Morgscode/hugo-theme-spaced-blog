@@ -3,8 +3,8 @@
   <header class="post-header">
     <h1 class="post-title m-b-l">{{ .Title }}</h1>
     {{- if ne .Type "page" }}
-    <div class="post-meta m-b-m">
-      <div class="post-meta__date m-b-s">
+    <div class="post-meta p-1 m-b-m">
+      <div class="post-meta__date">
         <p class="">Posted on <span>{{ .PublishDate.Format "Jan 2, 2006" }}</span></p>
       </div>
       <div class="post-meta__reading-time">

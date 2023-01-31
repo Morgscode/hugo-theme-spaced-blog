@@ -6,6 +6,7 @@ TODOS:
 - Add mobile nav
 - Add styling for custom render image template
 - Add support for site main header image
+- Add support for blog logo
 - Add support for site main intro text
 - Add support for post main image - main site header fallback
 - Add support for default post author
