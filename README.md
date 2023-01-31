@@ -2,6 +2,7 @@
 
 TODOS:
 
+- Add author social media icon support
 - Add sidebar
 - Add search support %like% behaviour
 - light-mode/dark-mode cover image
