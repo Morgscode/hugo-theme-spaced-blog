@@ -18,9 +18,12 @@ TODOS:
 
 ![Intro](https://github.com/Morgscode/hugo-theme-spaced-blog/blob/master/images/cover.png)
 
-A Hugo minimalistic theme for bloggers
+A Hugo minimalistic theme for blog sites. With dark mode and a11y out of the box.
 
 Main features:
+
+- Dark mode support
+- a11y support
 
 ## Getting started
 
@@ -36,32 +39,32 @@ Clone this repository into `themes/` directory:
 
 ```bash
 $ cd [path]
-$ git clone https://github.com/Morgscode/spaced-hugo-theme.git themes/spaced
+$ git clone https://github.com/Morgscode/hugo-theme-spaced-blog.git themes/spaced-blog
 ```
 
 Add this line in the `config.toml` file:
 
 ```toml
-theme = "spaced"
+theme = "spaced-blog"
 ```
 
 ### Configuration
 
 In your `config.toml` file, define the following variables in `params`:
 
-- `author`: Name of the author
-- `description`: Short description of the author
-- `avatar`: Path of file containing the author avatar image
+- `author`: Name of the main site author
+- `description`: Short description of the main author
+- `avatar`: Path of file containing the main site author avatar image
 - `menu_item_separator`: Separator between each menu item. HTML allowed (default: " - ")
 - `favicon`: Absolute path of your favicon.ico file (default: "/favicon.ico")
 
 To add a menu item, add the following lines in `menu`:
 
 ```
-[[menu.main]]
-  identifier = "home"
-  name = "Home"
-  url = "/"
+[[menu.menu_name]]
+  identifier = "item-identifier"
+  name = "Item Name"
+  url = "/item-slug"
 ```
 
 [Read Hugo documentations](https://gohugo.io/content-management/menus/#readout) for more informations about menu
