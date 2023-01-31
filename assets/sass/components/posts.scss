@@ -4,14 +4,14 @@
     &-item {
       padding: #{$spacing-l / 2};
       border-radius: $borderRadius;
-      background-color: $colorGrey;
+      background-color: darken($colorWhite, 10);
       &:last-child {
         margin-bottom: 0px;
       }
-      &-title { 
+      &-title {
         color: $colorBlack;
         display: block;
-        text-decoration: none; 
+        text-decoration: none;
       }
     }
   }
@@ -23,7 +23,8 @@
       line-height: 1.5;
       margin-bottom: $spacing-s;
     }
-    ol, ul {
+    ol,
+    ul {
       li {
         margin-bottom: calc(#{$spacing-s} / 2);
         &::marker {
@@ -31,6 +32,22 @@
         }
         & > * {
           display: inline;
+        }
+      }
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .posts {
+    &-list {
+      &-item {
+        background-color: darken($colorBlack, 10);
+        &:last-child {
+          margin-bottom: 0px;
+        }
+        &-title {
+          color: $colorWhite;
         }
       }
     }

@@ -19,6 +19,7 @@ body {
   font-family: "Montserrat", sans-serif;
   color: $colorBlack;
   position: relative;
+  background-color: $colorWhite;
 }
 
 .skip-to-main-content-link {
@@ -26,16 +27,28 @@ body {
   left: -9999px;
   z-index: 999;
   padding: 1em;
-  background-color: black;
-  color: white;
+  background-color: $colorBlack;
+  color: $colorWhite;
   opacity: 0;
 }
 .skip-to-main-content-link:focus {
-  left: 50%;
-  transform: translateX(-50%);
+  top: 2rem;
+  left: 2rem;
   opacity: 1;
 }
 
 ol, ul {
   list-style-position: inside;
+}
+
+@media (prefers-color-scheme: dark) {
+  body, html {
+    background-color: rgba($colorBlack, 0.9);
+    color: $colorWhite;
+  }
+
+  .skip-to-main-content-link {
+    background-color: $colorBlack;
+    color: $colorWhite;
+  }
 }

@@ -17,7 +17,7 @@
 
 .heading__primary {
   &-light {
-    color: white;
+    color: $colorWhite;
   }
 }
 
@@ -66,4 +66,16 @@ code {
 a {
   color: $colorBlue;
   text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .heading__primary,
+  .heading__secondary {
+    color: $colorWhite;
+  }
+
+  code {
+    background-color: lighten($colorBlack, 10);
+    color: $colorWhite;
+  }
 }
