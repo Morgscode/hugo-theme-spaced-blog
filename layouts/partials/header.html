@@ -1,0 +1,19 @@
+<header class="header p-3">
+  <div class="blog-title">
+    <h1>{{ .Title }}</h1>
+  </div>
+  {{- with .Site.Menus.main }}
+  <div class="main-navigation">
+    <nav class="navigation">
+      {{- range $key, $item := . }}
+      {{- if ne $key 0 }}
+      {{ $.Site.Params.menu_item_separator | default " - " | safeHTML }}
+      {{ end }}
+      <li class="navgation-item">
+        <a class="navigation-link" href="{{ $item.URL }}">{{ $item.Name }}</a>
+      </li>
+      {{- end }}
+    </nav>
+  </div>
+  {{- end }}
+</header>

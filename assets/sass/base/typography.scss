@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400");
+/* ------- typography --------- */
+
+/* headings */
+.heading__primary,
+.heading__secondary {
+  color: $colorBlack;
+  display: block;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 2.25;
+  span {
+    display: inline-block;
+  }
+}
+
+.heading__primary {
+  &-light {
+    color: white;
+  }
+}
+
+/* parapragh */
+.paragraph {
+  font-size: $fontSize;
+  color: $colorBlack;
+  font-weight: 300;
+  line-height: 2;
+  &:not(:last-child) {
+    margin-bottom: $spacing-s;
+  }
+}
+
+.bounce {
+  font-size: 50px;
+  display: block;
+  text-align: center;
+  animation: bounce 1.75s infinite;
+}
+
+.introBounce {
+  animation: bounce 1.5s 6;
+}

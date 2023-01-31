@@ -1,0 +1,12 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} // {{ .Site.Title }}{{ end }}</title>
+  <meta name="author" content="{{ .Site.Params.author | default " Jeffrey Lebowski" }}" />
+  <meta name="description"
+    content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Description }}{{ end }}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {{ $style := resources.Get "sass/main.scss" | resources.ExecuteAsTemplate "sass/main.scss" . | resources.ToCSS |
+  resources.Minify | resources.Fingerprint -}}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
+</head>

@@ -1,0 +1,21 @@
+.container {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  &-fluid {
+    max-width: 100% !important;
+    width: 100%;
+  }
+  @media only screen and (min-width: 1400px) {
+    width: 90%;
+  }
+  @media only screen and (min-width: 992.1px) and (max-width: 1400px) {
+    width: 92%;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
+    width: 94%;
+  }
+  @media only screen and (max-width: 576px) {
+    width: 96%;
+  }
+}

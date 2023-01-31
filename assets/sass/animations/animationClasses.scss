@@ -1,0 +1,19 @@
+.firstSceneItem {
+  opacity: 0;
+  transform: translateX(-90px);
+  transition-timing-function: ease-out;
+}
+
+.secondSceneItem {
+  opacity: 0;
+}
+
+.textStagger1,
+.textStagger2 {
+  transition-timing-function: cubic-bezier(1, 1, 0, 0);
+}
+
+.visible {
+  opacity: 1 !important;
+}
+

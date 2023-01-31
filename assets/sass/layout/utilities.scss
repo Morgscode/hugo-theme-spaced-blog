@@ -1,0 +1,255 @@
+.p {
+  &-1 {
+    padding: $spacing-s;
+  }
+  &-2 {
+    padding: $spacing-m;
+  }
+  &-3 {
+    padding: $spacing-l;
+  }
+  &-t {
+    &-s {
+      padding-top: $spacing-s;
+    }
+    &-m {
+      padding-top: $spacing-m;
+    }
+    &-l {
+      padding-top: $spacing-l;
+    }
+  }
+  &-b {
+    &-s {
+      padding-bottom: $spacing-s;
+    }
+    &-m {
+      padding-bottom: $spacing-m;
+    }
+    &-l {
+      padding-bottom: $spacing-l;
+    }
+  }
+  &-l {
+    &-s {
+      padding-left: $spacing-s;
+    }
+    &-m {
+      padding-left: $spacing-m;
+    }
+    &-l {
+      padding-left: $spacing-l;
+    }
+  }
+  &-r {
+    &-s {
+      padding-right: $spacing-s;
+    }
+    &-m {
+      padding-right: $spacing-m;
+    }
+    &-l {
+      padding-right: $spacing-l;
+    }
+  }
+}
+
+.m {
+  &-1 {
+    margin: $spacing-s;
+  }
+  &-2 {
+    margin: $spacing-m;
+  }
+  &-3 {
+    margin: $spacing-l;
+  }
+  &-t {
+    &-s {
+      margin-top: $spacing-s;
+    }
+    &-m {
+      margin-top: $spacing-m;
+    }
+    &-l {
+      margin-top: $spacing-l;
+    }
+  }
+  &-b {
+    &-s {
+      margin-bottom: $spacing-s;
+    }
+    &-m {
+      margin-bottom: $spacing-m;
+    }
+    &-l {
+      margin-bottom: $spacing-l;
+    }
+  }
+  &-l {
+    &-s {
+      margin-left: $spacing-s;
+    }
+    &-m {
+      margin-left: $spacing-m;
+    }
+    &-l {
+      margin-left: $spacing-l;
+    }
+  }
+  &-r {
+    &-s {
+      margin-right: $spacing-s;
+    }
+    &-m {
+      margin-right: $spacing-m;
+    }
+    &-l {
+      margin-right: $spacing-l;
+    }
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+@media only screen and (max-width: 992px) {
+
+  .p {
+    &-1 {
+      padding: calc(#{$spacing-s} / 2);
+    }
+    &-2 {
+      padding: calc(#{$spacing-m} / 2);
+    }
+    &-3 {
+      padding: calc(#{$spacing-l} / 2); 
+    }
+    &-t {
+      &-s {
+        padding-top: calc(#{$spacing-s} / 2);
+      }
+      &-m {
+        padding-top: calc(#{$spacing-m} / 2);
+      }
+      &-l {
+        padding-top: calc(#{$spacing-l} / 2);
+      }
+    }
+    &-b {
+      &-s {
+        padding-bottom: calc(#{$spacing-s} / 2);
+      }
+      &-m {
+        padding-bottom: calc(#{$spacing-m} / 2);
+      }
+      &-l {
+        padding-bottom: calc(#{$spacing-l} / 2);
+      }
+    }
+    &-l {
+      &-s {
+        padding-left: calc(#{$spacing-s} / 2);
+      }
+      &-m {
+        padding-left: calc(#{$spacing-m} / 2);
+      }
+      &-l {
+        padding-left: calc(#{$spacing-l} / 2);
+      }
+    }
+    &-r {
+      &-s {
+        padding-right: calc(#{$spacing-s} / 2);
+      }
+      &-m {
+        padding-right: calc(#{$spacing-m} / 2);
+      }
+      &-l {
+        padding-right: calc(#{$spacing-l} / 2);
+      }
+    }
+  }
+  
+  .m {
+    &-1 {
+      margin: calc(#{$spacing-s} / 2);
+    }
+    &-2 {
+      margin: calc(#{$spacing-m} / 2);
+    }
+    &-3 {
+      margin: calc(#{$spacing-l} / 2);
+    }
+    &-t {
+      &-s {
+        margin-top: calc(#{$spacing-s} / 2);
+      }
+      &-m {
+        margin-top: calc(#{$spacing-m} / 2);
+      }
+      &-l {
+        margin-top: calc(#{$spacing-l} / 2);
+      }
+    }
+    &-b {
+      &-s {
+        margin-bottom: calc(#{$spacing-s} / 2);
+      }
+      &-m {
+        margin-bottom: calc(#{$spacing-m} / 2);
+      }
+      &-l {
+        margin-bottom: calc(#{$spacing-l} / 2);
+      }
+    }
+    &-l {
+      &-s {
+        margin-left: calc(#{$spacing-s} / 2);
+      }
+      &-m {
+        margin-left: calc(#{$spacing-m} / 2);
+      }
+      &-l {
+        margin-left: calc(#{$spacing-l} / 2);
+      }
+    }
+    &-r {
+      &-s {
+        margin-right: calc(#{$spacing-s} / 2);
+      }
+      &-m {
+        margin-right: calc(#{$spacing-m} / 2);
+      }
+      &-l {
+        margin-right: calc(#{$spacing-l} / 2);
+      }
+    }
+  }
+  
+}

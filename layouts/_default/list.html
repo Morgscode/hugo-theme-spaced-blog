@@ -1,0 +1,17 @@
+{{ define "main" }}
+<article>
+  <ul class="posts-list">
+    {{ range where .Paginator.Pages "Type" "!=" "page" }}
+    <li class="posts-list-item">
+      <a class="posts-list-item-title" href="{{ .Permalink }}">{{ .Title }}</a>
+      <span class="posts-list-item-description">
+        {{ .PublishDate.Format "Jan 2, 2006" }}
+        <span class="posts-list-item-separator">-</span>
+        {{ .ReadingTime }} min read
+      </span>
+    </li>
+    {{ end }}
+  </ul>
+  {{ partial "pagination.html" $ }}
+</article>
+{{ end }}

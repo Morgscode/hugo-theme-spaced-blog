@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+{{- partial "head.html" . -}}
+
+<body>
+    <a href="#main" class="skip-to-main-content-link">Skip to main content</a>
+    {{- partial "header.html" . -}}
+    <main id="main">
+        <section class="p-t-l p-b-l">
+            <div class="container p-3">
+                {{- block "main" . }}{{- end }}
+            </div>
+        </section>
+    </main>
+    {{- partial "footer.html" . -}}
+</body>
+
+</html>

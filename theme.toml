@@ -1,0 +1,21 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = "Spaced"
+license = "MIT"
+licenselink = "https://github.com/morgscode/Spaced/blob/master/LICENSE"
+description = "A minimalistic blog theme."
+homepage = "htts://spaced.luke-morgan.com"
+tags = ["Minimalistic", "Dark mode", "Blog"]
+features = ["Dark mode", "a11y"]
+min_version = "0.41.0"
+
+[author]
+  name = "Luke Morgan"
+  homepage = "https://luke-morgan.com"
+
+# If porting an existing theme
+[original]
+  name = ""
+  homepage = ""
+  repo = ""
