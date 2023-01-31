@@ -5,17 +5,25 @@
   {{- with .Site.Menus.main }}
   <div class="main-navigation">
     <nav class="navigation">
-      <ul class="navigation-list">
-        {{- range $key, $item := . }}
-        {{- if ne $key 0 }}
-        {{ $.Site.Params.menu_item_separator | default " - " | safeHTML }}
-        {{ end }}
-        <li class="navgation-item">
-          <a class="navigation-link" href="{{ $item.URL }}">{{ $item.Name }}</a>
-        </li>
-        {{- end }}
-      </ul>
+      <div class="main-navigation-container relative">
+        <div class="mobile-nav-close">
+          <span class="mobile-nav-close-icon"></span>
+        </div>
+        <ul class="navigation-list">
+          {{- range $key, $item := . }}
+          {{- if ne $key 0 }}
+          {{ $.Site.Params.menu_item_separator | default " - " | safeHTML }}
+          {{ end }}
+          <li class="navgation-item">
+            <a class="navigation-link" href="{{ $item.URL }}">{{ $item.Name }}</a>
+          </li>
+          {{- end }}
+        </ul>
+      </div>
     </nav>
+  </div>
+  <div class="mobile-nav-open">
+    <span class="mobile-nav-open-icon"></span>
   </div>
   {{- end }}
 </header>

@@ -10,9 +10,8 @@ $colorPurple: #9c88ff;
 
 /* font */
 $fontSize: 1rem;
-$titleFont: "Montserrat", sans-serif;
-$bodyFont: "Montserrat", sans-serif;
-
+$titleFont: "Merriweather", serif;
+$bodyFont: "Poppins", sans-serif;
 /* spacing */
 $spacing-s: 1rem;
 $spacing-m: 2rem;
@@ -20,4 +19,8 @@ $spacing-l: 3rem;
 
 /* design features */
 $borderRadius: 6px;
-$boxShadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+$boxShadow: 0px 0px 6px $colorBlack;
+
+@media (prefers-color-scheme: dark) {
+  $boxShadow: 0px 0px 6px $colorWhite;
+}

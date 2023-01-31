@@ -138,6 +138,18 @@
   align-items: flex-end;
 }
 
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
 @media only screen and (max-width: 992px) {
   .p {
     &-1 {
