@@ -27,3 +27,22 @@
   </div>
   {{- end }}
 </header>
+{{ if .Page.Site.Params.usecover }}
+<div class="p-t-s p-b-s">
+  {{ if .Page.Params.cover }}
+  <!-- check for featured image -->
+  {{ else }}
+  <!-- use default -->
+  {{ $image := .Resources.GetMatch "images/blog.cover.jpg.jpg" }}
+  {{ if $image }}
+  {{ else }}
+  {{ $image := resources.GetMatch "images/blog-cover.jpg"}}
+  {{ if $image }}
+  {{ partial "banner.html" (dict "Destination" $image.RelPermalink) }}
+  {{ else }}
+  <div class="p-3 text-center">NO BANNER IMAGE SET</div>
+  {{ end }}
+  {{ end }}
+  {{ end }}
+</div>
+{{ end }}
