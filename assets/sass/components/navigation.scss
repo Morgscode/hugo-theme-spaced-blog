@@ -20,6 +20,9 @@ nav {
       li {
         a {
           color: $colorWhite;
+          &:visited {
+            color: $colorWhite;
+          }
         }
       }
     }
