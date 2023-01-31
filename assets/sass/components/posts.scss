@@ -2,6 +2,12 @@
   &-list {
     list-style: none;
     &-item {
+      padding: #{$spacing-l / 2};
+      border-radius: $borderRadius;
+      background-color: $colorGrey;
+      &:last-child {
+        margin-bottom: 0px;
+      }
       &-title { 
         color: $colorBlack;
         display: block;
@@ -15,7 +21,18 @@
   &-content {
     & > * {
       line-height: 1.5;
-      margin-bottom: 1rem;
+      margin-bottom: $spacing-s;
+    }
+    ol, ul {
+      li {
+        margin-bottom: calc(#{$spacing-s} / 2);
+        &::marker {
+          display: inline;
+        }
+        & > * {
+          display: inline;
+        }
+      }
     }
   }
 }

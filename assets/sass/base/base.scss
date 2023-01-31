@@ -35,3 +35,7 @@ body {
   transform: translateX(-50%);
   opacity: 1;
 }
+
+ol, ul {
+  list-style-position: inside;
+}

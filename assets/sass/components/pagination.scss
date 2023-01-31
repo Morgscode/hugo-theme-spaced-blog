@@ -1,0 +1,15 @@
+.pagination {
+  &-list {
+    list-style: none;
+    &-item {
+      display: inline-block;
+      background-color: $colorBlack;
+      border-radius: $borderRadius;
+      &-link {
+        color: $colorWhite;
+        display: inline-block;
+        padding: #{$spacing-s / 2};
+      }
+    } 
+  }
+}

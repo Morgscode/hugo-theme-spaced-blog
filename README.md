@@ -1,19 +1,22 @@
 # spaced theme
 
+TODOS:
+
+- Add support for site main image
+- Add support for site main intro text
+- Add support for post image
+- Add support for multiple site authors
+- Add support for author per post
+- Add support for multiple authors per post
+- Add support for author images
+- Add support for categories
+- Add support for tags
+
 ![Intro](https://github.com/Morgscode/spaced-hugo-theme/blob/master/spaced.png)
 
 A Hugo minimalistic theme for bloggers
 
 Main features:
-
-- Fully responsive
-- Twitter Cards, Open Graph, Disqus and Google Analytics supported (see Hugo docs)
-- Customizable colors
-- Customizable picture and description
-- Customizable menu on sidebar
-- Customizable social media links on sidebar
-- Optimized for performance 100/100 on Lighthouse
-- icons included
 
 ## Getting started
 
@@ -52,40 +55,12 @@ To add a menu item, add the following lines in `menu`:
 
 ```
 [[menu.main]]
-  identifier = "about"
-  name = "About"
-  url = "/about"
+  identifier = "home"
+  name = "Home"
+  url = "/"
 ```
 
 [Read Hugo documentations](https://gohugo.io/content-management/menus/#readout) for more informations about menu
-
-To add a social link, add the following lines in `params`:
-
-```
-[[params.social]]
-  icon = "github"
-  name = "My Github"
-  url = "https://github.com/vaga"
-```
-
-To change theme colors, add the following lines in `params`:
-
-```
-[params.style]
-  darkestColor = "#d35050"
-  darkColor = "#212121"
-  lightColor = "#f5e3e0"
-  lightestColor = "#f5f5f5"
-  primaryColor = "#ffffff"
-```
-
-If you want the above theme colors, you can see the [exampleSite/config.toml](/exampleSite/config.toml) file.
-
-### Styling
-
-To override styles using scss, add a file called `_extra.scss` to `[path]/assets/css/`
-
-**Note:** Hugo releases come in two versions, `hugo` and `hugo_extended`. You need `hugo_extended` to automatically compile your scss.
 
 ## License
 
