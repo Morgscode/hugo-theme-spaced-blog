@@ -14,9 +14,8 @@ Main features:
 
 - Dark mode support
 - a11y support
-- Blog logo
 - Banner images
-- Main blog author profile with social media links
+- Main blog author profile
 
 ## Getting started
 
