@@ -223,7 +223,7 @@ h6 {
 p {
   font-size: $fontSize;
   color: $colorBlack;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 2;
   &:not(:last-child) {
     margin-bottom: $spacing-s;
@@ -269,7 +269,7 @@ ul {
   li {
     font-size: $fontSize;
     color: $colorBlack;
-    font-weight: 300;
+    font-weight: 400;
   }
 }
 

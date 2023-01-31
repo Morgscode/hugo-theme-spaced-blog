@@ -17,6 +17,17 @@
           {{ .ReadingTime }} min read
         </p>
       </div>
+      {{- with .Params.categories }}
+      <div class="posts-list-item-tags m-t-s">
+        Categories:
+        {{- range . -}}
+        {{ $slug := urlize .}}
+        {{ with $.Site.GetPage (printf "/%s/%s" "categories" $slug ) }}
+        <a class="tag" href="{{ .Permalink }}">{{ .Title }}</a> |
+        {{- end }}
+        {{- end }}
+      </div>
+      {{- end }}
       {{- with .Params.tags }}
       <div class="m-t-s">
         tags:
