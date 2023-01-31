@@ -2,8 +2,6 @@
 
 TODOS:
 
-- Add support for categories
-- Add support for tags
 - Add sidebar
 - Add search support %like% behaviour
 - light-mode/dark-mode cover image
@@ -60,6 +58,27 @@ To add a menu item, add the following lines in `menu`:
   identifier = "item-identifier"
   name = "Item Name"
   url = "/item-slug"
+```
+
+The basic menu structure you'll need for this theme is:
+
+```
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "categories"
+    name = "Categories"
+    url = "/categories"
+    weight = 2
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags"
+    weight = 3
 ```
 
 To use cover images for the blog: set the `useCover` param to `true`.
