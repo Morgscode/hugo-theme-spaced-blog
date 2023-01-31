@@ -2,15 +2,18 @@
 
 TODOS:
 
-- Add support for site main image
+- Add mobile nav
+- Add support for site main header image
 - Add support for site main intro text
-- Add support for post image
-- Add support for multiple site authors
+- Add support for post - main site header fallback
+- Add support for default post author
 - Add support for author per post
 - Add support for multiple authors per post
 - Add support for author images
 - Add support for categories
 - Add support for tags
+- Add sidebar
+- Add search support %like% behaviour
 
 ![Intro](https://github.com/Morgscode/spaced-hugo-theme/blob/master/spaced.png)
 
