@@ -2,7 +2,7 @@
 
 TODOS:
 
-- Build mobile nav
+- Add mobile nav
 - Add support for site main header image
 - Add support for site main intro text
 - Add support for post - main site header fallback
