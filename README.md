@@ -15,7 +15,7 @@ TODOS:
 - Add sidebar
 - Add search support %like% behaviour
 
-![Intro](https://github.com/Morgscode/spaced-hugo-theme/blob/master/spaced.png)
+![Intro](https://github.com/Morgscode/spaced-hugo-theme/blob/master/images/screenshot.png)
 
 A Hugo minimalistic theme for bloggers
 
