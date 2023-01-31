@@ -42,3 +42,28 @@
 .introBounce {
   animation: bounce 1.5s 6;
 }
+
+code {
+  display: block;
+  position: relative;
+  padding: $spacing-s;
+  margin-top: $spacing-s;
+  margin-bottom: $spacing-s;
+  background-color: $colorBlack;
+  color: $colorWhite;
+  &::before {
+    display: inline-block;
+    background-color: $colorGreen;
+    content: "";
+    height: 100%;
+    width: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+a {
+  color: $colorBlue;
+  text-decoration: none;
+}
