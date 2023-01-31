@@ -1,6 +1,6 @@
-<header class="header p-3">
-  <div class="blog-title">
-    <h1>{{ .Site.Title }}</h1>
+<header class="header p-2">
+  <div class="header__title">
+    <h1><a href="{{ "" | relURL }}">{{ .Site.Title }}</a></h1>
   </div>
   {{- with .Site.Menus.main }}
   <div class="main-navigation">
@@ -31,17 +31,28 @@
 <div class="p-t-s p-b-s">
   {{ if .Page.Params.cover }}
   <!-- check for featured image -->
-  {{ else }}
-  <!-- use default -->
-  {{ $image := .Resources.GetMatch "images/blog.cover.jpg.jpg" }}
+  {{ $image := .Resources.GetMatch "cover.jpg" }}
   {{ if $image }}
+  {{ partial "banner.html" (dict "Destination" $image.RelPermalink) }}
   {{ else }}
+  <!-- check for blog cover image -->
   {{ $image := resources.GetMatch "images/blog-cover.jpg"}}
   {{ if $image }}
   {{ partial "banner.html" (dict "Destination" $image.RelPermalink) }}
   {{ else }}
+  <!-- no image set notice -->
   <div class="p-3 text-center">NO BANNER IMAGE SET</div>
   {{ end }}
+  {{ end }}
+
+  {{ else }}
+  <!-- use default blog cover -->
+  {{ $image := resources.GetMatch "images/blog-cover.jpg"}}
+  {{ if $image }}
+  {{ partial "banner.html" (dict "Destination" $image.RelPermalink) }}
+  {{ else }}
+  <!-- no image set notice -->
+  <div class="p-3 text-center">NO BANNER IMAGE SET</div>
   {{ end }}
   {{ end }}
 </div>

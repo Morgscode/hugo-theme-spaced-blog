@@ -1,0 +1,9 @@
+<div class="author">
+  {{ $image := resources.GetMatch "images/blog-author.jpg"}}
+  {{ if $image }}
+  <img class="author__image" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" />
+  {{ end }}
+  {{ range .Site.Params.author }}
+  <p class="author__name">By:&nbsp;<span>{{ .name }}</span></p>
+  {{ end }}
+</div>

@@ -2,12 +2,6 @@
 
 TODOS:
 
-- Add support for blog logo
-- Add support for site main intro text
-- Add support for main post author
-- Add support for author per post
-- Add support for multiple authors per post
-- Add support for author images
 - Add support for categories
 - Add support for tags
 - Add sidebar
@@ -22,6 +16,9 @@ Main features:
 
 - Dark mode support
 - a11y support
+- Blog logo
+- Banner images
+- Main blog author profile with social media links
 
 ## Getting started
 
@@ -54,6 +51,8 @@ In your `config.toml` file, define the following variables in `params`:
 - `mainAuthor`: The name of the primary blog author
 - `mainAuthorDescription`: The primary blog author's description
 
+In your sites `/archetypes` directory rename `defualt.md` to `_default.md` so the themes' `archetypes/default.md` can take precedence.
+
 To add a menu item, add the following lines in `menu`:
 
 ```
@@ -67,7 +66,7 @@ To use cover images for the blog: set the `useCover` param to `true`.
 
 To add a default cover image for your entire blog, name your image `blog-cover.jpg` and place in `assets/images`.
 
-To add a default cover image for a specific - place an image named `cover.jpg` in the page bundle.
+To add a default cover image for a specific page - place an image named `cover.jpg` in the page bundle.
 
 [Read Hugo documentations](https://gohugo.io/content-management/menus/#readout) for more informations about menu
 
