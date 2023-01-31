@@ -3,13 +3,32 @@
     list-style: none;
     &-item {
       display: inline-block;
-      background-color: $colorBlack;
+      background-color: darken($colorWhite, 10);
       border-radius: $borderRadius;
       &-link {
-        color: $colorWhite;
+        color: $colorBlack;
+        &:visited {
+          color: $colorBlack;
+        }
         display: inline-block;
         padding: #{$spacing-s / 2};
       }
-    } 
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .pagination {
+    &-list {
+      &-item {
+        background-color: darken($colorBlack, 10);
+        &-link {
+          color: $colorWhite;
+          &:visited {
+            color: $colorWhite;
+          }
+        }
+      }
+    }
   }
 }

@@ -63,9 +63,17 @@ code {
   }
 }
 
+ol,
+ul {
+  list-style-position: inside;
+}
+
 a {
   color: $colorBlue;
   text-decoration: none;
+  &:visited {
+    color: $colorPurple;
+  }
 }
 
 @media (prefers-color-scheme: dark) {

@@ -139,117 +139,115 @@
 }
 
 @media only screen and (max-width: 992px) {
-
   .p {
     &-1 {
-      padding: calc(#{$spacing-s} / 2);
+      padding: #{$spacing-s / 2};
     }
     &-2 {
-      padding: calc(#{$spacing-m} / 2);
+      padding: #{$spacing-m / 2};
     }
     &-3 {
-      padding: calc(#{$spacing-l} / 2); 
+      padding: #{$spacing-l / 2};
     }
     &-t {
       &-s {
-        padding-top: calc(#{$spacing-s} / 2);
+        padding-top: #{$spacing-s / 2};
       }
       &-m {
-        padding-top: calc(#{$spacing-m} / 2);
+        padding-top: #{$spacing-m / 2};
       }
       &-l {
-        padding-top: calc(#{$spacing-l} / 2);
+        padding-top: #{$spacing-l / 2};
       }
     }
     &-b {
       &-s {
-        padding-bottom: calc(#{$spacing-s} / 2);
+        padding-bottom: #{$spacing-s / 2};
       }
       &-m {
-        padding-bottom: calc(#{$spacing-m} / 2);
+        padding-bottom: #{$spacing-m / 2};
       }
       &-l {
-        padding-bottom: calc(#{$spacing-l} / 2);
+        padding-bottom: #{$spacing-l / 2};
       }
     }
     &-l {
       &-s {
-        padding-left: calc(#{$spacing-s} / 2);
+        padding-left: #{$spacing-s / 2};
       }
       &-m {
-        padding-left: calc(#{$spacing-m} / 2);
+        padding-left: #{$spacing-m / 2};
       }
       &-l {
-        padding-left: calc(#{$spacing-l} / 2);
+        padding-left: #{$spacing-l / 2};
       }
     }
     &-r {
       &-s {
-        padding-right: calc(#{$spacing-s} / 2);
+        padding-right: #{$spacing-s / 2};
       }
       &-m {
-        padding-right: calc(#{$spacing-m} / 2);
+        padding-right: #{$spacing-m / 2};
       }
       &-l {
-        padding-right: calc(#{$spacing-l} / 2);
+        padding-right: #{$spacing-l / 2};
       }
     }
   }
-  
+
   .m {
     &-1 {
-      margin: calc(#{$spacing-s} / 2);
+      margin: #{$spacing-s / 2};
     }
     &-2 {
-      margin: calc(#{$spacing-m} / 2);
+      margin: #{$spacing-m / 2};
     }
     &-3 {
-      margin: calc(#{$spacing-l} / 2);
+      margin: #{$spacing-l / 2};
     }
     &-t {
       &-s {
-        margin-top: calc(#{$spacing-s} / 2);
+        margin-top: #{$spacing-s / 2};
       }
       &-m {
-        margin-top: calc(#{$spacing-m} / 2);
+        margin-top: #{$spacing-m / 2};
       }
       &-l {
-        margin-top: calc(#{$spacing-l} / 2);
+        margin-top: #{$spacing-l / 2};
       }
     }
     &-b {
       &-s {
-        margin-bottom: calc(#{$spacing-s} / 2);
+        margin-bottom: #{$spacing-s / 2};
       }
       &-m {
-        margin-bottom: calc(#{$spacing-m} / 2);
+        margin-bottom: #{$spacing-m / 2};
       }
       &-l {
-        margin-bottom: calc(#{$spacing-l} / 2);
+        margin-bottom: #{$spacing-l / 2};
       }
     }
     &-l {
       &-s {
-        margin-left: calc(#{$spacing-s} / 2);
+        margin-left: #{$spacing-s / 2};
       }
       &-m {
-        margin-left: calc(#{$spacing-m} / 2);
+        margin-left: #{$spacing-m / 2};
       }
       &-l {
-        margin-left: calc(#{$spacing-l} / 2);
+        margin-left: #{$spacing-l / 2};
       }
     }
     &-r {
       &-s {
-        margin-right: calc(#{$spacing-s} / 2);
+        margin-right: #{$spacing-s / 2};
       }
       &-m {
-        margin-right: calc(#{$spacing-m} / 2);
+        margin-right: #{$spacing-m / 2};
       }
       &-l {
-        margin-right: calc(#{$spacing-l} / 2);
+        margin-right: #{$spacing-l / 2};
       }
     }
   }
-  
 }

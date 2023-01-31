@@ -37,12 +37,9 @@ body {
   opacity: 1;
 }
 
-ol, ul {
-  list-style-position: inside;
-}
-
 @media (prefers-color-scheme: dark) {
-  body, html {
+  body,
+  html {
     background-color: rgba($colorBlack, 0.9);
     color: $colorWhite;
   }

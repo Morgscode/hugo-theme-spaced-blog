@@ -9,6 +9,9 @@ nav {
       a {
         text-decoration: none;
         color: $colorBlack;
+        &:visited {
+          color: $colorBlack;
+        }
       }
     }
   }
@@ -20,6 +23,9 @@ nav {
       li {
         a {
           color: $colorWhite;
+          &:visited {
+            color: $colorWhite;
+          }
         }
       }
     }
