@@ -17,18 +17,19 @@
         </div>
         {{ end }}
       </div>
+
       {{- with .Params.categories }}
       <div class="posts-list-item-tags m-t-s">
-        <div>
-          Categories:
-          {{- range . -}}
-          {{ with $.Site.GetPage (printf "/%s/%s" "categories" . ) }}
-          <a class="tag" href="{{ .Permalink }}">{{ .Title }}</a> |
-          {{- end }}
-          {{- end }}
-        </div>
+        Categories:
+        {{- range . -}}
+        {{ $slug := urlize .}}
+        {{ with $.Site.GetPage (printf "/%s/%s" "categories" $slug ) }}
+        <a class="tag" href="{{ .Permalink }}">{{ .Title }}</a> |
+        {{- end }}
+        {{- end }}
       </div>
       {{- end }}
+
       {{- with .Params.tags }}
       <div class="posts-list-item-tags m-t-s">
         <div>
