@@ -1,4 +1,4 @@
-# spaced theme
+# spaced blog theme
 
 TODOS:
 
@@ -14,8 +14,9 @@ TODOS:
 - Add support for tags
 - Add sidebar
 - Add search support %like% behaviour
+- light-mode/dark-mode cover image
 
-![Intro](https://github.com/Morgscode/spaced-hugo-theme/blob/master/images/screenshot.png)
+![Intro](https://github.com/Morgscode/hugo-theme-spaced-blog/blob/master/images/cover.png)
 
 A Hugo minimalistic theme for bloggers
 
