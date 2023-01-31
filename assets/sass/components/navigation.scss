@@ -17,6 +17,97 @@ nav {
   }
 }
 
+.mobile-nav-open {
+  display: none;
+  height: 35px;
+  width: 35px;
+  margin-left: auto;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  &:hover {
+    cursor: pointer;
+  }
+  &-icon {
+    display: inline-block;
+    background-color: $colorBlack;
+    height: 4px;
+    width: 100%;
+    &::after,
+    &::before {
+      position: absolute;
+      left: 0;
+      display: inline-block;
+      content: "";
+      height: 4px;
+      width: 100%;
+      background-color: $colorBlack;
+    }
+    &::before {
+      top: 5px;
+    }
+    &::after {
+      bottom: 5px;
+    }
+  }
+}
+
+.mobile-nav-close {
+  display: none;
+  height: 35px;
+  width: 35px;
+  margin-left: auto;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 2rem;
+  &:hover {
+    cursor: pointer;
+  }
+  &-icon {
+    width: 100%;
+    height: 4px;
+    transform: rotate(45deg);
+    background-color: $colorBlack;
+    &::before {
+      display: inline-block;
+      content: "";
+      background-color: $colorBlack;
+      width: 100%;
+      height: 4px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(90deg);
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .mobile-nav-close,
+  .mobile-nav-open {
+    display: flex;
+  }
+  .main-navigation {
+    padding: 2rem;
+    margin-left: unset;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    min-width: 300px;
+    background-color: darken($colorWhite, 10);
+    height: 100vh;
+    transform: translateX(100%);
+    transition: all 0.3s ease;
+    border-left: 3px solid $colorBlack;
+    box-shadow: $boxShadow;
+    &.active {
+      transform: translateX(0);
+    }
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   nav {
     ul {
@@ -28,6 +119,31 @@ nav {
           }
         }
       }
+    }
+  }
+
+  .mobile-nav-open {
+    &-icon {
+      background-color: darken($colorWhite, 10);
+      &::after,
+      &::before {
+        background-color: darken($colorWhite, 10);
+      }
+    }
+  }
+
+  .mobile-nav-close {
+    &-icon {
+      background-color: darken($colorWhite, 10);
+      &::before {
+        background-color: darken($colorWhite, 10);
+      }
+    }
+  }
+
+  @media only screen and (max-width: 992px) {
+    .main-navigation {
+      background-color: darken($colorBlack, 10);
     }
   }
 }

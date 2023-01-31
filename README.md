@@ -2,7 +2,6 @@
 
 TODOS:
 
-- Add font files
 - Add mobile nav
 - Add styling for custom render image template
 - Add support for site main header image
