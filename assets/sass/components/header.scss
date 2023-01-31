@@ -2,6 +2,14 @@
   display: flex;
   align-items: center;
   position: relative;
+  &__title {
+    a {
+      color: $colorBlack;
+      &:visited {
+        color: $colorBlack;
+      }
+    }
+  }
   &::after {
     background-color: $colorBlack;
     display: inline-block;
@@ -17,6 +25,14 @@
 
 @media (prefers-color-scheme: dark) {
   .header {
+    &__title {
+      a {
+        color: $colorWhite;
+        &:visited {
+          color: $colorWhite;
+        }
+      }
+    }
     &::after {
       background-color: lighten($colorBlack, 30);
     }

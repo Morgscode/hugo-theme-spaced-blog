@@ -217,30 +217,9 @@ h4,
 h5,
 h6 {
   font-family: $titleFont;
-  font-weight: 300;
+  font-weight: 700;
 }
 
-/* headings */
-.heading__primary,
-.heading__secondary {
-  color: $colorBlack;
-  display: block;
-  text-transform: uppercase;
-  font-weight: 300;
-  font-size: 2rem;
-  line-height: 2.25;
-  span {
-    display: inline-block;
-  }
-}
-
-.heading__primary {
-  &-light {
-    color: $colorWhite;
-  }
-}
-
-/* parapragh */
 p {
   font-size: $fontSize;
   color: $colorBlack;
@@ -258,7 +237,10 @@ p {
   animation: bounce 1.75s infinite;
 }
 
-code {
+code,
+blockquote {
+  overflow: auto;
+  line-height: 2;
   display: block;
   position: relative;
   padding: $spacing-s;
@@ -266,6 +248,9 @@ code {
   margin-bottom: $spacing-s;
   background-color: $colorBlack;
   color: $colorWhite;
+  & > * {
+    max-width: 100%;
+  }
   &::before {
     display: inline-block;
     background-color: $colorGreen;
@@ -297,8 +282,12 @@ a {
 }
 
 @media (prefers-color-scheme: dark) {
-  .heading__primary,
-  .heading__secondary {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     color: $colorWhite;
   }
 

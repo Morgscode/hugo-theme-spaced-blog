@@ -5,14 +5,49 @@
     <li class="posts-list-item m-b-l">
       <h3 class="posts-list-item-title m-b-m"><a class="posts-list-item-link" href="{{ .Permalink }}">{{ .Title }}</a>
       </h3>
-      <span class="posts-list-item-description">
+      <div class="posts-list-item-description">
+        {{ if .PublishDate }}
         <div class="m-b-s">
           Posted on: {{ .PublishDate.Format "Jan 2, 2006" }}
         </div>
+        {{ end }}
+        {{ if .ReadingTime }}
         <div>
           Reading time: {{ .ReadingTime }} min read
         </div>
-      </span>
+        {{ end }}
+      </div>
+      {{- with .Params.categories }}
+      <div class="posts-list-item-tags m-t-s">
+        <div>
+          Categories:
+          {{- range . -}}
+          {{ with $.Site.GetPage (printf "/%s/%s" "categories" . ) }}
+          <a class="tag" href="{{ .Permalink }}">{{ .Title }}</a> |
+          {{- end }}
+          {{- end }}
+        </div>
+      </div>
+      {{- end }}
+      {{- with .Params.tags }}
+      <div class="posts-list-item-tags m-t-s">
+        <div>
+          Tags:
+          {{- range . -}}
+          {{ with $.Site.GetPage (printf "/%s/%s" "tags" . ) }}
+          <a class="tag" href="{{ .Permalink }}">{{ .Title }}</a> |
+          {{- end }}
+          {{- end }}
+        </div>
+      </div>
+      {{- end }}
+      <div class="posts-lists-item-link btn m-t-s">
+        <a href="{{ .Permalink }}">View {{ .Type | singularize }}</a>
+      </div>
+    </li>
+    {{ else }}
+    <li>
+      <h2>No {{ .Type }} found</h2>
     </li>
     {{ end }}
   </ul>
