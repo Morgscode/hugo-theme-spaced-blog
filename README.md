@@ -50,11 +50,9 @@ theme = "spaced-blog"
 
 In your `config.toml` file, define the following variables in `params`:
 
-- `author`: Name of the main site author
-- `description`: Short description of the main author
-- `avatar`: Path of file containing the main site author avatar image
-- `menu_item_separator`: Separator between each menu item. HTML allowed (default: " - ")
-- `favicon`: Absolute path of your favicon.ico file (default: "/favicon.ico")
+- `useCover`: wether or not you want to use a banner image for the blog and its posts
+- `mainAuthor`: The name of the primary blog author
+- `mainAuthorDescription`: The primary blog author's description
 
 To add a menu item, add the following lines in `menu`:
 
@@ -64,6 +62,12 @@ To add a menu item, add the following lines in `menu`:
   name = "Item Name"
   url = "/item-slug"
 ```
+
+To use cover images for the blog: set the `useCover` param to `true`.
+
+To add a default cover image for your entire blog, name your image `blog-cover.jpg` and place in `assets/images`.
+
+To add a default cover image for a specific - place an image named `cover.jpg` in the page bundle.
 
 [Read Hugo documentations](https://gohugo.io/content-management/menus/#readout) for more informations about menu
 
