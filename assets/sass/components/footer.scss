@@ -14,3 +14,11 @@
     width: 90%;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  .footer {
+    &::before {
+      background-color: lighten($colorBlack, 30);
+    }
+  }
+}

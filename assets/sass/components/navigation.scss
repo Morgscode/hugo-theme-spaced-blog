@@ -13,3 +13,15 @@ nav {
     }
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  nav {
+    ul {
+      li {
+        a {
+          color: $colorWhite;
+        }
+      }
+    }
+  }
+}
