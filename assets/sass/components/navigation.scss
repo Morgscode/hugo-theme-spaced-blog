@@ -17,6 +17,16 @@ nav {
   }
 }
 
+.navigation {
+  &-list {
+    display: flex;
+  }
+  &-link {
+    display: inline-flex;
+    padding: 1rem;
+  }
+}
+
 .mobile-nav-open {
   display: none;
   height: 35px;
@@ -104,6 +114,15 @@ nav {
     box-shadow: $boxShadow;
     &.active {
       transform: translateX(0);
+    }
+  }
+  .navigation {
+    &-list {
+      display: flex;
+      flex-direction: column;
+    }
+    &-link {
+      display: flex;
     }
   }
 }

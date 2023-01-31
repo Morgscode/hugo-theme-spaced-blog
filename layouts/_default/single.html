@@ -18,10 +18,11 @@
         </p>
       </div>
       {{- with .Params.tags }}
-      <div>
+      <div class="m-t-s">
+        tags:
         {{- range . -}}
         {{ with $.Site.GetPage (printf "/%s/%s" "tags" . ) }}
-        <a class="tag" href="{{ .Permalink }}">{{ .Title }}</a>
+        <a class="tag" href="{{ .Permalink }}">{{ .Title }}</a> |
         {{- end }}
         {{- end }}
       </div>

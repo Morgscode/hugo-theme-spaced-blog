@@ -12,9 +12,8 @@
         <ul class="navigation-list">
           {{- range $key, $item := . }}
           {{- if ne $key 0 }}
-          {{ $.Site.Params.menu_item_separator | default " - " | safeHTML }}
           {{ end }}
-          <li class="navgation-item">
+          <li class="navigation-item">
             <a class="navigation-link" href="{{ $item.URL }}">{{ $item.Name }}</a>
           </li>
           {{- end }}
