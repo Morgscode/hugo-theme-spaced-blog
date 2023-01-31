@@ -1,0 +1,15 @@
+.main-navigation {
+  margin-left: auto;
+}
+
+nav {
+  ul {
+    list-style: none;
+    li {
+      a {
+        text-decoration: none;
+        color: $colorBlack;
+      }
+    }
+  }
+}

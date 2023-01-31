@@ -13,7 +13,7 @@ Main features:
 - Customizable menu on sidebar
 - Customizable social media links on sidebar
 - Optimized for performance 100/100 on Lighthouse
-- All feather icons included
+- icons included
 
 ## Getting started
 

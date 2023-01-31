@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  align-items: center;
+  position: relative;
+  &::after {
+    background-color: $colorBlack;
+    display: inline-block;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 90%;
+  }
+}

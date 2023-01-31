@@ -1,0 +1,21 @@
+.posts {
+  &-list {
+    list-style: none;
+    &-item {
+      &-title { 
+        color: $colorBlack;
+        display: block;
+        text-decoration: none; 
+      }
+    }
+  }
+}
+
+.post {
+  &-content {
+    & > * {
+      line-height: 1.5;
+      margin-bottom: 1rem;
+    }
+  }
+}
