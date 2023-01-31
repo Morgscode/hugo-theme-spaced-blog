@@ -1,5 +1,14 @@
 # spaced theme
 
+TODOS:
+
+- Add support for site authors
+- Add support for author per post
+- Add support for multiple authors per post
+- Add support for author images
+- Add support for categories
+- Add support for tags
+
 ![Intro](https://github.com/Morgscode/spaced-hugo-theme/blob/master/spaced.png)
 
 A Hugo minimalistic theme for bloggers
