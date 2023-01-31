@@ -1,6 +1,6 @@
 # spaced theme
 
-![Intro](https://github.com/vaga/hugo-theme-m10c/blob/master/images/cover.png)
+![Intro](https://github.com/Morgscode/spaced-hugo-theme/blob/master/spaced.png)
 
 A Hugo minimalistic theme for bloggers
 
@@ -29,13 +29,13 @@ Clone this repository into `themes/` directory:
 
 ```bash
 $ cd [path]
-$ git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c
+$ git clone https://github.com/Morgscode/spaced-hugo-theme.git themes/spaced
 ```
 
 Add this line in the `config.toml` file:
 
 ```toml
-theme = "m10c"
+theme = "spaced"
 ```
 
 ### Configuration
@@ -52,9 +52,9 @@ To add a menu item, add the following lines in `menu`:
 
 ```
 [[menu.main]]
-  identifier = "tags"
-  name = "Tags"
-  url = "/tags/"
+  identifier = "about"
+  name = "About"
+  url = "/about"
 ```
 
 [Read Hugo documentations](https://gohugo.io/content-management/menus/#readout) for more informations about menu
@@ -92,5 +92,3 @@ To override styles using scss, add a file called `_extra.scss` to `[path]/assets
 This theme is released under the [**MIT**](/LICENSE.md) License.
 
 ## Acknowledgements
-
-- [feather](https://feathericons.com/) - [MIT](https://github.com/feathericons/feather/blob/master/LICENSE)
