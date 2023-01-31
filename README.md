@@ -5,7 +5,6 @@ TODOS:
 - Add author social media icon support
 - Add sidebar
 - Add search support %like% behaviour
-- light-mode/dark-mode cover image
 
 ![Intro](https://github.com/Morgscode/hugo-theme-spaced-blog/blob/master/images/cover.png)
 
