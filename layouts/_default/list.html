@@ -17,30 +17,19 @@
         </div>
         {{ end }}
       </div>
+
       {{- with .Params.categories }}
       <div class="posts-list-item-tags m-t-s">
-        <div>
-          Categories:
-          {{- range . -}}
-          {{ with $.Site.GetPage (printf "/%s/%s" "categories" . ) }}
-          <a class="tag" href="{{ .Permalink }}">{{ .Title }}</a> |
-          {{- end }}
-          {{- end }}
-        </div>
+        {{ partial "post-categories.html" (dict "cats" . "ctx" $) }}
       </div>
       {{- end }}
+
       {{- with .Params.tags }}
       <div class="posts-list-item-tags m-t-s">
-        <div>
-          Tags:
-          {{- range . -}}
-          {{ with $.Site.GetPage (printf "/%s/%s" "tags" . ) }}
-          <a class="tag" href="{{ .Permalink }}">{{ .Title }}</a> |
-          {{- end }}
-          {{- end }}
-        </div>
+        {{ partial "post-tags.html" (dict "tags" . "ctx" $) }}
       </div>
       {{- end }}
+
       <div class="posts-lists-item-link btn m-t-s">
         <a href="{{ .Permalink }}">View {{ .Type | singularize }}</a>
       </div>
