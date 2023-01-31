@@ -1,0 +1,13 @@
+{{ $cats := .cats }}
+{{$ctx := .ctx }}
+{{ with .cats }}
+<div>
+  Categories:
+  {{- range $cats -}}
+  {{ $slug := urlize .}}
+  {{ with $ctx.Site.GetPage (printf "/%s/%s" "categories" $slug ) }}
+  <a class="tag" href="{{ .Permalink }}">{{ .Title }}</a> |
+  {{- end }}
+  {{- end }}
+</div>
+{{ end }}

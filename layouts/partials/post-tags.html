@@ -1,0 +1,12 @@
+{{ $tags := .tags }}
+{{ $ctx := .ctx }}
+{{ with .tags }}
+<div>
+  Tags:
+  {{- range $tags -}}
+  {{ with $ctx.Site.GetPage (printf "/%s/%s" "tags" . ) }}
+  <a class="tag" href="{{ .Permalink }}">{{ .Title }}</a> |
+  {{- end }}
+  {{- end }}
+</div>
+{{ end }}

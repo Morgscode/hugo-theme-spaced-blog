@@ -19,23 +19,12 @@
       </div>
       {{- with .Params.categories }}
       <div class="posts-list-item-tags m-t-s">
-        Categories:
-        {{- range . -}}
-        {{ $slug := urlize .}}
-        {{ with $.Site.GetPage (printf "/%s/%s" "categories" $slug ) }}
-        <a class="tag" href="{{ .Permalink }}">{{ .Title }}</a> |
-        {{- end }}
-        {{- end }}
+        {{ partial "post-categories.html" (dict "cats" . "ctx" $) }}
       </div>
       {{- end }}
       {{- with .Params.tags }}
       <div class="m-t-s">
-        tags:
-        {{- range . -}}
-        {{ with $.Site.GetPage (printf "/%s/%s" "tags" . ) }}
-        <a class="tag" href="{{ .Permalink }}">{{ .Title }}</a> |
-        {{- end }}
-        {{- end }}
+        {{ partial "post-tags.html" (dict "tags" . "ctx" $) }}
       </div>
       {{- end }}
     </div>
