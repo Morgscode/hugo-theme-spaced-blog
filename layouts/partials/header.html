@@ -28,24 +28,12 @@
 </header>
 {{ if .Page.Site.Params.usecover }}
 <div class="p-t-s p-b-s">
-  {{ if .Page.Params.cover }}
   <!-- check for featured image -->
   {{ $image := .Resources.GetMatch "cover.jpg" }}
   {{ if $image }}
   {{ partial "banner.html" (dict "Destination" $image.RelPermalink) }}
   {{ else }}
   <!-- check for blog cover image -->
-  {{ $image := resources.GetMatch "images/blog-cover.jpg"}}
-  {{ if $image }}
-  {{ partial "banner.html" (dict "Destination" $image.RelPermalink) }}
-  {{ else }}
-  <!-- no image set notice -->
-  <div class="p-3 text-center">NO BANNER IMAGE SET</div>
-  {{ end }}
-  {{ end }}
-
-  {{ else }}
-  <!-- use default blog cover -->
   {{ $image := resources.GetMatch "images/blog-cover.jpg"}}
   {{ if $image }}
   {{ partial "banner.html" (dict "Destination" $image.RelPermalink) }}
