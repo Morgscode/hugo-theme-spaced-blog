@@ -15,7 +15,8 @@
           {{ end }}
           <li class="navigation-item">
             {{ if eq $.Name $item.Name }}
-            <a aria-current="page" class="navigation-link" href="{{ $item.URL }}">{{ $item.Name }}</a>
+            <a aria-current="page" class="navigation-link navigation-link--current" href="{{ $item.URL }}">{{ $item.Name
+              }}</a>
             {{ else }}
             <a aria-current="false" class="navigation-link" href="{{ $item.URL }}">{{ $item.Name }}</a>
             {{ end }}
