@@ -14,6 +14,7 @@ Main features:
 
 - Dark mode support
 - a11y support
+- Mobile responsive
 - Banner images
 - Main blog author profile
 
@@ -31,7 +32,7 @@ Clone this repository into `themes/` directory:
 
 ```bash
 $ cd [path]
-$ git clone https://github.com/Morgscode/hugo-theme-spaced-blog.git themes/spaced-blog
+$ git submodule add https://github.com/Morgscode/hugo-theme-spaced-blog.git themes/spaced-blog
 ```
 
 Add this line in the `config.toml` file:
