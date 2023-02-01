@@ -1,5 +1,7 @@
 # spaced blog theme
 
+A minimalistic Hugo theme for blogs. With dark mode and a11y out of the box.
+
 TODOS:
 
 - Add author social media icon support
@@ -7,8 +9,6 @@ TODOS:
 - Add search support %like% behaviour
 
 ![Intro](https://github.com/Morgscode/hugo-theme-spaced-blog/blob/master/images/cover.png)
-
-A Hugo minimalistic theme for blog sites. With dark mode and a11y out of the box.
 
 Main features:
 
