@@ -48,8 +48,6 @@ In your `config.toml` file, define the following variables in `params`:
 - `mainAuthor`: The name of the primary blog author
 - `mainAuthorDescription`: The primary blog author's description
 
-In your sites `/archetypes` directory rename `defualt.md` to `_default.md` so the themes' `archetypes/default.md` can take precedence.
-
 To add a menu item, add the following lines in `menu`:
 
 ```
