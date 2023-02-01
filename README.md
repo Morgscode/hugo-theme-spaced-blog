@@ -1,9 +1,10 @@
 # spaced blog theme
 
-A minimalistic Hugo theme for blogs. With dark mode and a11y out of the box.
+A beautifully minimalistic Hugo theme for blogs. With dark mode and a11y out of the box.
 
 TODOS:
 
+- Add styling for ALL markdown elements
 - Add author social media icon support
 - Add sidebar
 - Add search support %like% behaviour

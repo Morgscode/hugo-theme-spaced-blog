@@ -11,8 +11,6 @@
         </div>
         <ul class="navigation-list">
           {{- range $key, $item := . }}
-          {{- if ne $key 0 }}
-          {{ end }}
           <li class="navigation-item">
             {{ if eq $.Name $item.Name }}
             <a aria-current="page" class="navigation-link navigation-link--current" href="{{ $item.URL }}">{{ $item.Name
