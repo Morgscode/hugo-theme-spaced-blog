@@ -273,6 +273,11 @@ ul {
   }
 }
 
+em {
+  padding: 5px 10px;
+  background-color: darken($colorWhite, 10);
+}
+
 a {
   color: $colorBlue;
   text-decoration: none;
@@ -305,5 +310,9 @@ a {
   code {
     background-color: lighten($colorBlack, 10);
     color: $colorWhite;
+  }
+
+  em {
+    background-color: darken($colorBlack, 10);
   }
 }
