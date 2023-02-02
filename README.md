@@ -46,9 +46,11 @@ theme = "spaced-blog"
 
 In your `config.toml` file, define the following variables in `params`:
 
-- `useCover`: wether or not you want to use a banner image for the blog and its posts
-- `mainAuthor`: The name of the primary blog author
-- `mainAuthorDescription`: The primary blog author's description
+- `description` = This will be the default html meta description for the blog and it's homepage. It can be overridden by setting a description in the front-matter of any page or post.
+- `useCover`: wether or not you want to use a banner images for the blog and its posts
+- `[[params.author]]`
+- `[[params.author]]name`: The name of the primary blog author
+- `[[params.author]]description`: The primary blog author's description
 
 To add a menu item, add the following lines in `menu`:
 
