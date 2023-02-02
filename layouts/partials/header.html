@@ -10,9 +10,13 @@
           <span class="mobile-nav-close-icon"></span>
         </div>
         <ul class="navigation-list">
+          {{ $home := $.IsHome}}
           {{- range $item := . }}
           <li class="navigation-item">
             {{ if eq $.Name $item.Name }}
+            <a aria-current="page" class="navigation-link navigation-link--current" href="{{ $item.URL }}">{{ $item.Name
+              }}</a>
+            {{ else if (and ($home) (eq $item.URL "/"))}}
             <a aria-current="page" class="navigation-link navigation-link--current" href="{{ $item.URL }}">{{ $item.Name
               }}</a>
             {{ else }}
