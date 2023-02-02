@@ -220,6 +220,30 @@ h6 {
   font-weight: 700;
 }
 
+h1 {
+  font-size: 4vh;
+}
+
+h2 {
+  font-size: 3.5vh;
+}
+
+h3 {
+  font-size: 3.25vh;
+}
+
+h4 {
+  font-size: #{$fontSize * 1.25};
+}
+
+h5 {
+  font-size: #{$fontSize * 1.15};
+}
+
+h6 {
+  font-size: $fontSize;
+}
+
 p {
   font-size: $fontSize;
   color: $colorBlack;
