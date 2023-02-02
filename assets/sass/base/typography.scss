@@ -262,8 +262,9 @@ p {
 }
 
 pre code {
+  max-width: 100%;
   white-space: pre;
-  overflow: auto;
+  overflow: scroll;
   line-height: 2;
   display: inline-block;
   position: relative;
