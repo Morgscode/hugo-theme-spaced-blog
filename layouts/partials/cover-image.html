@@ -1,0 +1,22 @@
+{{ if .Page.Site.Params.usecover }}
+<div class="p-t-s p-b-s">
+  <!-- check for featured image -->
+  {{ $image := .Resources.GetMatch "cover.jpg" }}
+  {{ if $image }}
+  <div class="image-wpr">
+    <div class="image banner-image" style="background-image: url('{{ $image.RelPermalink | safeURL }}');"></div>
+  </div>
+  {{ else }}
+  <!-- check for blog cover image -->
+  {{ $image := resources.GetMatch "images/blog-cover.jpg"}}
+  {{ if $image }}
+  <div class="image-wpr">
+    <div class="image banner-image" style="background-image: url('{{ $image.RelPermalink | safeURL }}');"></div>
+  </div>
+  {{ else }}
+  <!-- no image set notice -->
+  <div class="p-3 text-center">NO BANNER IMAGE SET</div>
+  {{ end }}
+  {{ end }}
+</div>
+{{ end }}

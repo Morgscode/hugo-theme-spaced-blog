@@ -93,5 +93,3 @@ To add a default cover image for a specific page - place an image named `cover.j
 ## License
 
 This theme is released under the [**MIT**](/LICENSE.md) License.
-
-## Acknowledgements
