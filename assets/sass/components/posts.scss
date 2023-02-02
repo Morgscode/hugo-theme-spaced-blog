@@ -8,6 +8,9 @@
       &:last-child {
         margin-bottom: 0px;
       }
+      span {
+        font-weight: 600;
+      }
       &-title {
         font-size: 6vh;
         color: $colorBlack;
@@ -29,20 +32,19 @@
     border-radius: $borderRadius;
     border-bottom: 3px solid darken($colorWhite, 20);
     background-color: darken($colorWhite, 10);
-    &__date {
-      span {
-        font-weight: 600;
-      }
+    span {
+      font-weight: 600;
     }
   }
   &-content {
     & > * {
-      line-height: 1.5;
+      line-height: 1.25;
       margin-bottom: $spacing-s;
     }
     ol,
     ul {
       li {
+        margin-top: calc(#{$spacing-s} / 2);
         margin-bottom: calc(#{$spacing-s} / 2);
         &::marker {
           display: inline;

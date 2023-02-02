@@ -13,9 +13,7 @@
         <p class="">Posted on:&nbsp<span>{{ .PublishDate.Format "Jan 2, 2006" }}</span></p>
       </div>
       <div class="post-meta__reading-time">
-        <p>
-          {{ .ReadingTime }} min read
-        </p>
+          <p><span>{{ .ReadingTime }} min read</span></p>
       </div>
       {{- with .Params.categories }}
       <div class="posts-list-item-tags m-t-s">

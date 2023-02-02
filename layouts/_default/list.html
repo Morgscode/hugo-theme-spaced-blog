@@ -7,13 +7,13 @@
       </h3>
       <div class="posts-list-item-description">
         {{ if .PublishDate }}
-        <div class="m-b-s">
-          Posted on: {{ .PublishDate.Format "Jan 2, 2006" }}
+        <div>
+          <p>Posted on: <span>{{ .PublishDate.Format "Jan 2, 2006" }}</span></p>
         </div>
         {{ end }}
         {{ if .ReadingTime }}
         <div>
-          Reading time: {{ .ReadingTime }} min read
+          <p><span>{{ .ReadingTime }} min read</span></p>
         </div>
         {{ end }}
       </div>
