@@ -26,6 +26,8 @@
     font-size: 6vh;
   }
   &-meta {
+    border-radius: $borderRadius;
+    border-bottom: 3px solid darken($colorWhite, 20);
     background-color: darken($colorWhite, 10);
     &__date {
       span {
@@ -74,6 +76,7 @@
   .post {
     &-meta {
       background-color: darken($colorBlack, 10);
+      border-bottom: 3px solid lighten($colorBlack, 20);
     }
   }
 }
