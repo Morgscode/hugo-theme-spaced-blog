@@ -255,7 +255,7 @@ blockquote {
   position: relative;
   background-color: $colorBlack;
   color: $colorWhite;
-  border-radius: 0.3em;
+  border-radius: $borderRadius;
   padding: 4px $spacing-s 4px $spacing-s;
   white-space: nowrap;
   &::before {
@@ -267,6 +267,7 @@ blockquote {
     position: absolute;
     top: 0;
     left: 0;
+    border-radius: $borderRadius;
   }
 }
 
