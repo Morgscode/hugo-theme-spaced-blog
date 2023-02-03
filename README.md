@@ -9,6 +9,9 @@ TODOS:
 - Add search support %like% behaviour
 - Add code syntax highlighting
 - Add `copy to clipboard` for block-level code elements
+- Add about the author block for single post
+- Add support for single post author override
+- Add support for multiple authors per post
 
 ![Intro](https://github.com/Morgscode/hugo-theme-spaced-blog/blob/master/images/cover.png)
 
