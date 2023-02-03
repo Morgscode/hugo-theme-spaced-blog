@@ -15,23 +15,13 @@
   <a href="#main" class="skip-to-main-content-link">Skip to main content</a>
   {{- partial "header.html" . -}}
   <main id="main">
-    <section class="p-t-s p-b-l">
+    <section class="p-3">
       <div class="_404 p-3">
         <h1 class="_404-title m-b-m">Page Not Found</h1>
         <p><a href="{{ "" | relURL }}">Go home</a></p>
       </div>
     </section>
   </main>
-
   {{- partial "footer.html" . -}}
 </body>
-
 </html>
-
-{{ define "main"}}
-<main id="main">
-  <div>
-    <h1 id="title"><a href="{{ "" | relURL }}">Go Home</a></h1>
-  </div>
-</main>
-{{ end }}
