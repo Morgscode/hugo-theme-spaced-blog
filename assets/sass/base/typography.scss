@@ -284,7 +284,7 @@ blockquote {
   background-color: $colorBlack;
   color: $colorWhite;
   border-radius: $borderRadius;
-  padding: 4px $spacing-s;
+  padding: #{$spacing-s / 4} $spacing-s;
   white-space: normal;
   &::before {
     display: inline-block;
