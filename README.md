@@ -4,10 +4,11 @@ A beautifully minimalistic Hugo theme for blogs. With dark mode and a11y out of 
 
 TODOS:
 
-- Add styling for ALL markdown elements
 - Add author social media icon support
 - Add sidebar
 - Add search support %like% behaviour
+- Add code syntax highlighting
+- Add `copy to clipboard` for block-level code elements
 
 ![Intro](https://github.com/Morgscode/hugo-theme-spaced-blog/blob/master/images/cover.png)
 

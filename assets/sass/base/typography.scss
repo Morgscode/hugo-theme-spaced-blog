@@ -270,6 +270,7 @@ pre code {
   position: relative;
   color: $colorWhite;
   padding: $spacing-s;
+  margin: $spacing-s 0;
   & > * {
     max-width: 100%;
   }
@@ -277,12 +278,14 @@ pre code {
 
 code,
 blockquote {
+  display: inline-block;
+  max-width: 100%;
   position: relative;
   background-color: $colorBlack;
   color: $colorWhite;
   border-radius: $borderRadius;
-  padding: 4px $spacing-s 4px $spacing-s;
-  white-space: nowrap;
+  padding: 4px $spacing-s;
+  white-space: normal;
   &::before {
     display: inline-block;
     background-color: $colorGreen;
@@ -293,6 +296,12 @@ blockquote {
     top: 0;
     left: 0;
     border-radius: $borderRadius;
+  }
+}
+
+blockquote {
+  & > * {
+    font-size: #{$fontSize + .5rem};
   }
 }
 
@@ -307,7 +316,7 @@ ul {
 }
 
 em {
-  padding: 5px 10px;
+  padding: 4px $spacing-s;
   background-color: darken($colorWhite, 10);
 }
 
@@ -340,7 +349,7 @@ a {
     }
   }
 
-  code {
+  code, blockquote {
     background-color: lighten($colorBlack, 10);
     color: $colorWhite;
   }

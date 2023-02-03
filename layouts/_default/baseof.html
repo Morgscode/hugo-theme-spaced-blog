@@ -13,8 +13,8 @@
         </section>
     </main>
     {{- partial "footer.html" . -}}
-    {{ $built := resources.Get "js/main.js" }}
-    <script src="{{ $built.RelPermalink }}"></script>
+    {{ $js := resources.Get "js/main.js" }}
+    <script src="{{ $js.RelPermalink }}"></script>
 </body>
 
 </html>
