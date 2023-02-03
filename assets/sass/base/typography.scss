@@ -303,6 +303,9 @@ blockquote {
   & > * {
     font-size: #{$fontSize + .5rem};
   }
+  em {
+    background-color: transparent;
+  }
 }
 
 ol,

@@ -5,11 +5,11 @@ A beautifully minimalistic Hugo theme for blogs. With dark mode and a11y out of 
 TODOS:
 
 - Add author social media icon support
+- Add about the author block for single post
 - Add sidebar
 - Add search support %like% behaviour
 - Add code syntax highlighting
 - Add `copy to clipboard` for block-level code elements
-- Add about the author block for single post
 - Add support for single post author override
 - Add support for multiple authors per post
 
