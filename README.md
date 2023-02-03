@@ -92,7 +92,7 @@ To add a default cover image for your entire blog, name your image `blog-cover.j
 
 To add a default cover image for a specific page - place an image named `cover.jpg` in the page bundle.
 
-[Read Hugo documentations](https://gohugo.io/content-management/menus/#readout) for more informations about menu
+[Read the Hugo documentation](https://gohugo.io/content-management/menus/#readout) for more informations about menus
 
 ## License
 
