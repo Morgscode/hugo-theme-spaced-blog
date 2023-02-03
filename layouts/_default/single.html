@@ -16,12 +16,12 @@
           <p><span>{{ .ReadingTime }} min read</span></p>
       </div>
       {{- with .Params.categories }}
-      <div class="posts-list-item-tags m-t-s">
+      <div class="post-categories m-t-s">
         {{ partial "post-categories.html" (dict "cats" . "ctx" $) }}
       </div>
       {{- end }}
       {{- with .Params.tags }}
-      <div class="m-t-s">
+      <div class="post-tags m-t-s">
         {{ partial "post-tags.html" (dict "tags" . "ctx" $) }}
       </div>
       {{- end }}
