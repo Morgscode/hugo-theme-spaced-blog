@@ -56,6 +56,8 @@ In your `config.toml` file, define the following variables in `params`:
 - `[[params.author]]name`: The name of the primary blog author
 - `[[params.author]]description`: The primary blog author's description
 
+To set the blog author's avatar image - place an image named `blog-author.jpg` in your sites `/content/imagages` folder. 
+
 To add a menu item, add the following lines in `menu`:
 
 ```
