@@ -10,4 +10,6 @@
   {{ $style := resources.Get "sass/main.scss" | resources.ExecuteAsTemplate "sass/main.scss" . | resources.ToCSS |
   resources.Minify | resources.Fingerprint -}}
   <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
+  {{ $syntax := resources.Get "css/syntax.css" | resources.Minify | resources.Fingerprint -}}
+  <link rel="stylesheet" href="{{ $syntax.RelPermalink }}" />
 </head>

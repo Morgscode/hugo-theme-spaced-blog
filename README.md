@@ -48,6 +48,8 @@ theme = "spaced-blog"
 
 ### Configuration
 
+#### Site params
+
 In your `config.toml` file, define the following variables in `params`:
 
 - `description` = This will be the default html meta description for the blog and it's homepage. It can be overridden by setting a description in the front-matter of any page or post.
@@ -88,6 +90,8 @@ The basic menu structure you'll need for this theme is:
     weight = 3
 ```
 
+#### Cover images
+
 To use cover images for the blog: set the `useCover` param to `true`.
 
 To add a default cover image for your entire blog, name your image `blog-cover.jpg` and place in `assets/images`.
@@ -95,6 +99,18 @@ To add a default cover image for your entire blog, name your image `blog-cover.j
 To add a default cover image for a specific page - place an image named `cover.jpg` in the page bundle.
 
 [Read the Hugo documentation](https://gohugo.io/content-management/menus/#readout) for more informations about menus.
+
+#### syntax highlighting
+
+This theme ships with a slightly altered monakai syntax highlighting stylesheet and more or less the default markup highlight configuration. To use it: add this to your site's `config.toml`
+
+```
+[markup]
+  [markup.highlight]
+    noClasses = false
+```
+
+The theme's base layout pulls in a css stylesheet to handle the highlighting styles. If you want to edit it, take a look at `/assets/css/syntax.css`
 
 ## License
 
