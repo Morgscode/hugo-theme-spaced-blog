@@ -283,8 +283,9 @@ blockquote {
   position: relative;
   background-color: $colorBlack;
   color: $colorWhite;
+  line-height: 1.5;
   border-radius: $borderRadius;
-  padding: #{$spacing-s / 4} $spacing-s;
+  padding: #{$spacing-s / 5} $spacing-s;
   white-space: normal;
   &::before {
     display: inline-block;
@@ -301,9 +302,13 @@ blockquote {
 
 blockquote {
   & > * {
+    color: $colorWhite;
     font-size: #{$fontSize + .5rem};
+    line-height: 1.5;
+    background-color: transparent;
   }
   em {
+    display: block;
     background-color: transparent;
   }
 }

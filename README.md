@@ -8,7 +8,6 @@ TODOS:
 - Add about the author block for single post
 - Add sidebar
 - Add search support %like% behaviour
-- Add code syntax highlighting
 - Add `copy to clipboard` for block-level code elements
 - Add support for single post author override
 - Add support for multiple authors per post
@@ -62,7 +61,7 @@ To set the blog author's avatar image - place an image named `blog-author.jpg` i
 
 To add a menu item, add the following lines in `menu`:
 
-```
+```toml
 [[menu.menu_name]]
   identifier = "item-identifier"
   name = "Item Name"
@@ -71,7 +70,7 @@ To add a menu item, add the following lines in `menu`:
 
 The basic menu structure you'll need for this theme is:
 
-```
+```toml
 [menu]
   [[menu.main]]
     identifier = "home"
@@ -104,7 +103,7 @@ To add a default cover image for a specific page - place an image named `cover.j
 
 This theme ships with a slightly altered monakai syntax highlighting stylesheet and more or less the default markup highlight configuration. To use it: add this to your site's `config.toml`
 
-```
+```toml
 [markup]
   [markup.highlight]
     noClasses = false
