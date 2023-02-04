@@ -2,7 +2,9 @@ name = "spaced-blog"
 license = "MIT"
 licenselink = "https://github.com/Morgscode/spaced-hugo-theme/blob/master/LICENSE"
 description = "A beautifully simplistic blog theme. Mobile responsive, dark mode and a11y support out of the box."
-homepage = "htts://hugo-theme-spaced-blog.luke-morgan.com"
+
+homepage = "https://github.com/Morgscode/hugo-theme-spaced-blog"
+demosite = "htts://hugo-theme-spaced-blog.luke-morgan.com"
 tags = ["Minimalistic", "Dark mode", "Blog"]
 features = ["Dark mode", "a11y", "Mobile responsive"]
 min_version = "0.41.0"
