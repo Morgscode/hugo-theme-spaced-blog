@@ -5,8 +5,7 @@
   {{ range .Site.Params.author -}}
     <meta name="author" content="{{ .name | default " Jeffrey Lebowski" }}" />
   {{ end -}}
-  <meta name="description"
-    content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.Description }}{{ end }}" />
+  <meta name="description" content="{{- if .Description -}}{{- .Description -}}{{- else -}}{{- .Site.Params.Description -}}{{- end -}}" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {{ $style := resources.Get "sass/main.scss" | resources.ExecuteAsTemplate "sass/main.scss" . | resources.ToCSS |
   resources.Minify | resources.Fingerprint -}}
