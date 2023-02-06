@@ -5,6 +5,7 @@
 @import "./base/variables.scss";
 @import "./base/base.scss";
 @import "./base/typography.scss";
+@import "./base/elements.scss";
 // layout
 @import "./layout/container.scss";
 @import "./layout/row.scss";
@@ -17,5 +18,7 @@
 @import "./components/images.scss";
 @import "./components/author.scss";
 @import "./components/pagination.scss";
+@import "./components/sidebar.scss";
+@import "./components/search.scss";
 @import "./components/footer.scss";
 @import "./components/404.scss";

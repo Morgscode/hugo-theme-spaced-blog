@@ -1,0 +1,168 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $titleFont;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 4vh;
+}
+
+h2 {
+  font-size: 3.5vh;
+}
+
+h3 {
+  font-size: 3.25vh;
+}
+
+h4 {
+  font-size: #{$fontSize * 1.25};
+}
+
+h5 {
+  font-size: #{$fontSize * 1.15};
+}
+
+h6 {
+  font-size: $fontSize;
+}
+
+p {
+  font-size: $fontSize;
+  color: $colorBlack;
+  font-weight: 400;
+  line-height: 2;
+  &:not(:last-child) {
+    margin-bottom: $spacing-s;
+  }
+}
+
+.bounce {
+  font-size: 50px;
+  display: block;
+  text-align: center;
+  animation: bounce 1.75s infinite;
+}
+
+pre code {
+  max-width: 100%;
+  white-space: pre;
+  overflow: auto;
+  line-height: 2;
+  display: inline-block;
+  position: relative;
+  color: $colorWhite;
+  padding: $spacing-s;
+  margin: $spacing-s 0;
+  & > * {
+    max-width: 100%;
+  }
+}
+
+code,
+blockquote {
+  display: inline-block;
+  max-width: 100%;
+  position: relative;
+  background-color: $colorBlack;
+  color: $colorWhite;
+  line-height: 1.5;
+  border-radius: $borderRadius;
+  padding: #{$spacing-s / 5} $spacing-s;
+  white-space: normal;
+  &::before {
+    display: inline-block;
+    background-color: $colorGreen;
+    content: '';
+    height: 100%;
+    width: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: $borderRadius;
+  }
+}
+
+blockquote {
+  & > * {
+    color: $colorWhite;
+    font-size: #{$fontSize + .5rem};
+    line-height: 1.5;
+    background-color: transparent;
+  }
+  em {
+    display: block;
+    background-color: transparent;
+  }
+}
+
+ol,
+ul {
+  list-style-position: inside;
+  li {
+    font-size: $fontSize;
+    color: $colorBlack;
+    font-weight: 400;
+  }
+}
+
+em {
+  padding: 4px $spacing-s;
+  background-color: darken($colorWhite, 10);
+}
+
+a {
+  color: $colorBlue;
+  text-decoration: none;
+  &:visited {
+    color: $colorPurple;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $colorWhite;
+  }
+
+  p {
+    color: $colorWhite;
+  }
+
+  ul,
+  ol {
+    li {
+      color: $colorWhite;
+    }
+  }
+
+  code, blockquote {
+    background-color: lighten($colorBlack, 10);
+    color: $colorWhite;
+  }
+
+  em {
+    background-color: darken($colorBlack, 10);
+  }
+}
+
+label {
+  margin-bottom: #{$spacing-s /2};
+}
+
+input {
+    display: inline-block;
+    padding: #{$spacing-s / 2};
+    border-radius: $borderRadius;
+    border: none;
+    margin-bottom: #{$spacing-s /2};
+}

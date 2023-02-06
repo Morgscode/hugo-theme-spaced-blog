@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html>
 {{- partial "head.html" . -}}
-
 <body>
     <a href="#main" class="skip-to-main-content-link">Skip to main content</a>
     {{- partial "header.html" . -}}
     <main id="main">
         <section class="p-t-s p-b-s">
             <div class="container p-1">
-                {{- block "main" . }}{{- end }}
+                {{- block "main" . }}{{- end -}}
             </div>
         </section>
     </main>
     {{- partial "footer.html" . -}}
-    {{ $js := resources.Get "js/main.js" }}
+    {{- $js := resources.Get "js/main.js" -}}
+    <script>
+        {{- $pages := slice -}}
+        {{- range .Site.AllPages -}} 
+          {{- if not .Draft -}}
+              {{- $page := dict "name" .Name "url" .Permalink -}}
+              {{- $pages = append $page $pages -}}
+          {{- end -}}
+        {{- end -}} 
+        const SITE_DATA = Object.freeze({
+            pages: {{ jsonify $pages }},
+        });
+    </script>
     <script src="{{ $js.RelPermalink }}"></script>
 </body>
 

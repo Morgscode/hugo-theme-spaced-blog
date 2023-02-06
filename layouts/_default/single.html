@@ -29,7 +29,22 @@
     {{- end }}
   </header>
   <div class="post-content">
-    {{ .Content }}
+    <div class="row">
+      {{- $cols := "col-12" -}}
+      {{- if $.Site.Params.usesidebar -}}
+          {{- $cols = "col-8 col-md-12" -}}
+      {{- end -}}
+      <div class="{{- $cols -}}">
+        {{ .Content }}
+      </div>
+      {{- if $.Site.Params.usesidebar -}}
+      <div class="col-4 col-md-12">
+          <div class="p-1">
+              {{- partial "sidebar.html" . -}}
+          </div>
+      </div>
+      {{- end -}}
+    </div>
   </div>
 </article>
 {{ end }}

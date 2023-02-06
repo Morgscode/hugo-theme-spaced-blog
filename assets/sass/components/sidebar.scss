@@ -1,0 +1,11 @@
+#sidebar {
+    border-radius: $borderRadius;
+    background-color: darken($colorWhite, 10);
+    padding: 1.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+    #sidebar {
+        background-color: darken($colorBlack, 10);
+    }
+}

@@ -6,8 +6,6 @@ TODOS:
 
 - Add author social media icon support
 - Add about the author block for single post
-- Add sidebar
-- Add search support %like% behaviour
 - Add `copy to clipboard` for block-level code elements
 - Add support for single post author override
 - Add support for multiple authors per post
@@ -18,6 +16,7 @@ Main features:
 
 - Dark mode support
 - a11y support
+- Page search
 - Mobile responsive
 - Banner images
 - Main blog author profile
@@ -93,6 +92,11 @@ The basic menu structure you'll need for this theme is:
 
 To use cover images for the blog: set the `useCover` param to `true`.
 
+```toml
+[params]
+  useCover = true
+```
+
 To add a default cover image for your entire blog, name your image `blog-cover.jpg` and place in `assets/images`.
 
 To add a default cover image for a specific page - place an image named `cover.jpg` in the page bundle.
@@ -101,7 +105,7 @@ To add a default cover image for a specific page - place an image named `cover.j
 
 #### syntax highlighting
 
-This theme ships with a slightly altered monakai syntax highlighting stylesheet and more or less the default markup highlight configuration. To use it: add this to your site's `config.toml`
+This theme ships with a slightly altered monakai syntax highlighting stylesheet and more or less the default markup highlight configuration. To use it set the `noClasses` param to false in the `markup highlight` config.
 
 ```toml
 [markup]
@@ -109,7 +113,18 @@ This theme ships with a slightly altered monakai syntax highlighting stylesheet 
     noClasses = false
 ```
 
-The theme's base layout pulls in a css stylesheet to handle the highlighting styles. If you want to edit it, take a look at `/assets/css/syntax.css`
+The theme's base layout pulls in a css stylesheet which is a tiny variation on the `monokai` theme to handle the highlighting styles: `/assets/css/syntax.css`
+
+#### Sidebar 
+
+The theme ships with a sidebar comes with a search form which has %like% behaviour for all of your page names.
+
+To active the sidebar set the `usesidebar` site param to `true` in your `config.toml`
+
+```toml
+[params]
+  useSidebar = true
+```
 
 ## License
 

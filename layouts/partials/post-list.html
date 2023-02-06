@@ -1,0 +1,43 @@
+<div class="posts p-1">
+    <ul class="posts-list">
+      {{ range where .Paginator.Pages "Type" "!=" "page" }}
+      <li class="posts-list-item m-b-l">
+        <h3 class="posts-list-item-title m-b-m"><a class="posts-list-item-link" href="{{ .Permalink }}">{{ .Title }}</a>
+        </h3>
+        <div class="posts-list-item-description">
+          {{ if .PublishDate }}
+          <div>
+            <p>Posted on: <span>{{ .PublishDate.Format "Jan 2, 2006" }}</span></p>
+          </div>
+          {{ end }}
+          {{ if .ReadingTime }}
+          <div>
+            <p><span>{{ .ReadingTime }} min read</span></p>
+          </div>
+          {{ end }}
+        </div>
+  
+        {{- with .Params.categories }}
+        <div class="posts-list-item-categories m-t-s">
+          {{ partial "post-categories.html" (dict "cats" . "ctx" $) }}
+        </div>
+        {{- end }}
+  
+        {{- with .Params.tags }}
+        <div class="posts-list-item-tags m-t-s">
+          {{ partial "post-tags.html" (dict "tags" . "ctx" $) }}
+        </div>
+        {{- end }}
+  
+        <div class="posts-lists-item-link btn m-t-s">
+          <a href="{{ .Permalink }}">View {{ .Type | singularize }}</a>
+        </div>
+      </li>
+      {{ else }}
+      <li>
+        <h2>No {{ .Type }} found</h2>
+      </li>
+      {{ end }}
+    </ul>
+    {{ partial "pagination.html" . }}
+  </div>

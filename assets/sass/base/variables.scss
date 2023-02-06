@@ -1,6 +1,6 @@
 /* colors */
 $colorBlack: #2f3640;
-$colorWhite: #ffffff;
+$colorWhite: #fafafa;
 $colorGrey: #dcdde1;
 $colorRed: #e84118;
 $colorBlue: #00a8ff;
@@ -12,6 +12,7 @@ $colorPurple: #9c88ff;
 $fontSize: 1rem;
 $titleFont: "Merriweather", serif;
 $bodyFont: "Poppins", sans-serif;
+
 /* spacing */
 $spacing-s: 1rem;
 $spacing-m: 2rem;
@@ -19,8 +20,8 @@ $spacing-l: 3rem;
 
 /* design features */
 $borderRadius: 6px;
-$boxShadow: 0px 0px 6px $colorBlack;
+$boxShadow: 0px 3px 6px $colorBlack;
 
 @media (prefers-color-scheme: dark) {
-  $boxShadow: 0px 0px 6px $colorWhite;
+  $boxShadow: 0px 3px 6px $colorWhite;
 }
