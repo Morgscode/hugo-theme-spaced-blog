@@ -2,29 +2,29 @@
 <article class="post p-1">
   <header class="post-header">
     <h1 class="post-title m-b-l">{{ .Title }}</h1>
-    {{- if ne .Type "page" }}
+    {{- if ne .Type "page" -}}
     <div class="post-meta p-1 m-b-m">
-      {{ if .Site.Params.author }}
+      {{- if .Site.Params.author -}}
       <div class="post-meta__author">
-        {{ partial "post-author.html" . }}
+        {{- partial "post-author.html" . -}}
       </div>
-      {{ end }}
+      {{- end -}}
       <div class="post-meta__date">
         <p class="">Posted on:&nbsp<span>{{ .PublishDate.Format "Jan 2, 2006" }}</span></p>
       </div>
       <div class="post-meta__reading-time">
-          <p><span>{{ .ReadingTime }} min read</span></p>
+        <p><span>{{ .ReadingTime }} min read</span></p>
       </div>
-      {{- with .Params.categories }}
+      {{- with .Params.categories -}}
       <div class="post-categories m-t-s">
-        {{ partial "post-categories.html" (dict "cats" . "ctx" $) }}
+        {{- partial "post-categories.html" (dict "cats" . "ctx" $) -}}
       </div>
-      {{- end }}
-      {{- with .Params.tags }}
+      {{- end -}}
+      {{- with .Params.tags -}}
       <div class="post-tags m-t-s">
-        {{ partial "post-tags.html" (dict "tags" . "ctx" $) }}
+        {{- partial "post-tags.html" (dict "tags" . "ctx" $) -}}
       </div>
-      {{- end }}
+      {{- end -}}
     </div>
     {{- end }}
   </header>
@@ -32,19 +32,20 @@
     <div class="row">
       {{- $cols := "col-12" -}}
       {{- if $.Site.Params.usesidebar -}}
-          {{- $cols = "col-8 col-md-12" -}}
+      {{- $cols = "col-8 col-md-12" -}}
       {{- end -}}
       <div class="{{- $cols -}}">
         {{ .Content }}
       </div>
       {{- if $.Site.Params.usesidebar -}}
       <div class="col-4 col-md-12">
-          <div class="p-1">
-              {{- partial "sidebar.html" . -}}
-          </div>
+        <div class="p-1">
+          {{- partial "sidebar.html" . -}}
+        </div>
       </div>
       {{- end -}}
     </div>
   </div>
+
 </article>
 {{ end }}

@@ -31,7 +31,6 @@ window.addEventListener('load', () => {
         output.innerHTML = `<p class="empty-notice">No results found for ${query}</p>`;
         searchResults.appendChild(output);
       }
-
     });
 
   })();
