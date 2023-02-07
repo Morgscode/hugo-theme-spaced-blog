@@ -4,7 +4,8 @@
 <div>
   Tags:
   {{- range $tags -}}
-  {{ with $ctx.Site.GetPage (printf "/%s/%s" "tags" . ) }}
+  {{ $tag := urlize . }}
+  {{ with $ctx.Site.GetPage (printf "/%s/%s" "tags" $tag ) }}
   <a class="tag" href="{{ .Permalink }}">{{ .Title }}</a> |
   {{- end }}
   {{- end }}
