@@ -60,6 +60,7 @@ pre code {
   color: $colorWhite;
   padding: $spacing-s;
   margin: $spacing-s 0;
+  box-shadow: 0px 5px 10px #333333;
   & > * {
     max-width: 100%;
   }
@@ -125,6 +126,22 @@ a {
   }
 }
 
+label {
+  margin-bottom: #{$spacing-s /2};
+}
+
+input {
+    display: inline-block;
+    padding: #{$spacing-s / 2};
+    border-radius: $borderRadius;
+    border: none;
+    margin-bottom: #{$spacing-s /2};
+}
+
+input[type='submit'] {
+  cursor: pointer;
+}
+
 @media (prefers-color-scheme: dark) {
   h1,
   h2,
@@ -154,16 +171,4 @@ a {
   em {
     background-color: darken($colorBlack, 10);
   }
-}
-
-label {
-  margin-bottom: #{$spacing-s /2};
-}
-
-input {
-    display: inline-block;
-    padding: #{$spacing-s / 2};
-    border-radius: $borderRadius;
-    border: none;
-    margin-bottom: #{$spacing-s /2};
 }

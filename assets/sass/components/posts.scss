@@ -47,9 +47,9 @@
     }
     ol,
     ul {
+      margin-top: calc(#{$spacing-s} / 2);
+      margin-bottom: calc(#{$spacing-s} / 2);
       li {
-        margin-top: calc(#{$spacing-s} / 2);
-        margin-bottom: calc(#{$spacing-s} / 2);
         &::marker {
           display: inline;
         }

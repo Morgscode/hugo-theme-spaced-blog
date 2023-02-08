@@ -5,8 +5,8 @@ description = "A beautifully simplistic blog theme. Mobile responsive, dark mode
 
 homepage = "https://github.com/Morgscode/hugo-theme-spaced-blog"
 demosite = "https://blog.luke-morgan.com"
-tags = ["Minimalistic", "Dark mode", "Blog"]
-features = ["Dark mode", "a11y", "Mobile responsive", "Search"]
+tags = ["Minimalistic", "Dark mode", "Blog", "Responsive", "Dark", "Light"]
+features = ["Dark mode", "a11y", "Responsive", "Search"]
 min_version = "0.41.0"
 
 [author]
