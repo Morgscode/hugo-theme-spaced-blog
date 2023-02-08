@@ -4,6 +4,12 @@
     padding: 1.5rem;
 }
 
+@media only screen and (min-width: 992px) {
+   #sidebar {
+    margin-left: 1rem;
+   }
+}
+
 @media (prefers-color-scheme: dark) {
     #sidebar {
         background-color: darken($colorBlack, 10);

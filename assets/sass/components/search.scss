@@ -2,8 +2,6 @@
   &-form {
     label {
       font-size: 4vh;
-      line-height: normal;
-      display: block;
       font-family: $titleFont;
     }
     input[type='search'] {
@@ -11,6 +9,8 @@
     }
   }
   &-results {
+    max-height: 600px;
+    overflow-y: auto;
     .search-result {
       border-radius: $borderRadius;
       padding: $spacing-s;
@@ -21,14 +21,14 @@
       }
     }
   }
-} 
+}
 
 @media (prefers-color-scheme: dark) {
-    #search {
-      &-results {
-        .search-result {
-            background-color: rgba(lighten($colorBlack, 10), 0.5);
-        }
+  #search {
+    &-results {
+      .search-result {
+        background-color: rgba(lighten($colorBlack, 10), 0.5);
       }
     }
+  }
 }

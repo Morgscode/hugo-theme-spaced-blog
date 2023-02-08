@@ -11,7 +11,6 @@ window.addEventListener('load', () => {
   const search = (() => {
 
     const searchResult = (result) => `<div class="search-result"><a href="${result.url}">${result.name}</a></div>`;
-
     const search = document.querySelector('#search-form');
     const searchResults = document.querySelector('#search-results');
 

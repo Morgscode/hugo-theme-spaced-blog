@@ -25,10 +25,11 @@ body {
 .skip-to-main-content-link {
   position: absolute;
   left: -9999px;
-  z-index: 999;
+  z-index: 10;
   padding: 1em;
-  background-color: $colorBlack;
-  color: $colorWhite;
+  background-color: $colorGrey;
+  border: 2px solid $colorBlack;
+  color: $colorBlack;
   opacity: 0;
 }
 .skip-to-main-content-link:focus {
@@ -46,6 +47,7 @@ body {
 
   .skip-to-main-content-link {
     background-color: $colorBlack;
+    border: 2px solid $colorWhite;
     color: $colorWhite;
   }
 }

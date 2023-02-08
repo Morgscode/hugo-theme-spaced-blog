@@ -2,6 +2,14 @@
   margin-left: auto;
 }
 
+.site-title {
+  font-size: 3rem;
+  line-height: normal;
+  & > a {
+    font-family: $titleFont;
+  }
+}
+
 nav {
   ul {
     list-style: none;

@@ -38,16 +38,10 @@ p {
   color: $colorBlack;
   font-weight: 400;
   line-height: 2;
+  font-family: $bodyFont;
   &:not(:last-child) {
     margin-bottom: $spacing-s;
   }
-}
-
-.bounce {
-  font-size: 50px;
-  display: block;
-  text-align: center;
-  animation: bounce 1.75s infinite;
 }
 
 pre code {
@@ -93,7 +87,7 @@ blockquote {
 blockquote {
   & > * {
     color: $colorWhite;
-    font-size: #{$fontSize + .5rem};
+    font-size: #{$fontSize + 0.5rem};
     line-height: 1.5;
     background-color: transparent;
   }
@@ -107,6 +101,7 @@ ol,
 ul {
   list-style-position: inside;
   li {
+    font-family: $bodyFont;
     font-size: $fontSize;
     color: $colorBlack;
     font-weight: 400;
@@ -121,25 +116,45 @@ em {
 a {
   color: $colorBlue;
   text-decoration: none;
+  font-family: $bodyFont;
   &:visited {
     color: $colorPurple;
   }
 }
 
 label {
-  margin-bottom: #{$spacing-s /2};
+  display: block;
+  line-height: normal;
+  margin-bottom: #{$spacing-s / 2};
 }
 
 input {
-    display: inline-block;
-    padding: #{$spacing-s / 2};
-    border-radius: $borderRadius;
-    border: none;
-    margin-bottom: #{$spacing-s /2};
+  display: inline-block;
+  padding: #{$spacing-s / 2};
+  border-radius: $borderRadius;
+  border: none;
+  margin-bottom: #{$spacing-s / 2};
 }
 
-input[type='submit'] {
+input[type='submit'], button {
   cursor: pointer;
+  padding: #{$spacing-s / 2} #{$spacing-m / 2};
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: darken($colorGrey, 10);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $colorPurple;
+  border-radius: $borderRadius;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -163,7 +178,13 @@ input[type='submit'] {
     }
   }
 
-  code, blockquote {
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: darken($colorBlack, 10);
+  }
+
+  code,
+  blockquote {
     background-color: lighten($colorBlack, 10);
     color: $colorWhite;
   }
