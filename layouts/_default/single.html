@@ -3,7 +3,7 @@
   <header class="post-header">
     <h1 class="post-title m-b-l">{{ .Title }}</h1>
     {{- if ne .Type "page" -}}
-    <div class="post-meta p-1 m-b-m">
+    <div class="post-meta p-2 m-b-m">
       {{- if .Site.Params.author -}}
       <div class="post-meta__author">
         {{- partial "post-author.html" . -}}
@@ -39,9 +39,7 @@
       </div>
       {{- if $.Site.Params.usesidebar -}}
       <div class="col-4 col-md-12">
-        <div class="p-1">
           {{- partial "sidebar.html" . -}}
-        </div>
       </div>
       {{- end -}}
     </div>
