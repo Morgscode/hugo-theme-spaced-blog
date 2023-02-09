@@ -19,10 +19,12 @@
         }
       }
       &-link {
-        color: $colorBlack;
-        display: inline-block;
-        text-decoration: none;
-        font-family: $titleFont;
+        a {
+          color: $colorBlack;
+          display: inline-block;
+          text-decoration: none;
+          font-family: $titleFont;
+        }
       }
     }
   }
