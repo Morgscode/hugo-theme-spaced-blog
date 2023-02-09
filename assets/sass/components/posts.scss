@@ -20,10 +20,11 @@
       }
       &-link {
         a {
-          color: $colorBlack;
           display: inline-block;
           text-decoration: none;
           font-family: $titleFont;
+          font-weight: 600;
+          font-size: 2rem;
         }
       }
     }
