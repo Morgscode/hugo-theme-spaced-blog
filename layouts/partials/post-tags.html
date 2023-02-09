@@ -6,7 +6,7 @@
   {{- range $tags -}}
   {{ $tag := urlize . }}
   {{ with $ctx.Site.GetPage (printf "/%s/%s" "tags" $tag ) }}
-  <a class="tag" href="{{ .Permalink }}">{{ .Title }}</a> |
+  <a class="tag" href="{{ .Permalink }}">{{ .Title }}</a>
   {{- end }}
   {{- end }}
 </div>

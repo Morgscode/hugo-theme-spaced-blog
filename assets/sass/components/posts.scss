@@ -20,8 +20,9 @@
       }
       &-link {
         color: $colorBlack;
-        display: block;
+        display: inline-block;
         text-decoration: none;
+        font-family: $titleFont;
       }
     }
   }
@@ -67,6 +68,14 @@
   }
 }
 
+.tag {
+  display: inline-block;
+  background-color: darken($colorWhite, 20);
+  border-radius: $borderRadius;
+  padding: #{$spacing-s / 4} #{$spacing-s / 2};
+  color: $colorBlack;
+}
+
 @media (prefers-color-scheme: dark) {
   .posts {
     &-list {
@@ -90,5 +99,10 @@
       background-color: darken($colorBlack, 10);
       border-bottom: 3px solid lighten($colorBlack, 20);
     }
+  }
+
+  .tag {
+    background-color: darken($colorWhite, 20);
+ 
   }
 }
