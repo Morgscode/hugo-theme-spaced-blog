@@ -14,6 +14,9 @@
       &-title {
         font-size: 6vh;
         color: $colorBlack;
+        & > a {
+          font-family: $titleFont;
+        }
       }
       &-link {
         color: $colorBlack;
@@ -27,6 +30,9 @@
 .post {
   &-title {
     font-size: 6vh;
+    & > a {
+      font-family: $titleFont;
+    }
   }
   &-meta {
     border-radius: $borderRadius;
