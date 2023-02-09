@@ -44,28 +44,12 @@ p {
   }
 }
 
-pre code {
-  max-width: 100%;
-  white-space: pre;
-  overflow: auto;
-  line-height: 2;
-  display: inline-block;
-  position: relative;
-  color: $colorWhite;
-  padding: $spacing-s;
-  margin: $spacing-s 0;
-  box-shadow: 0px 5px 10px #333333;
-  & > * {
-    max-width: 100%;
-  }
-}
-
 code,
 blockquote {
   display: inline-block;
   max-width: 100%;
   position: relative;
-  background-color: $colorBlack;
+  background-color: darken($colorBlack, 10);
   color: $colorWhite;
   line-height: 1.5;
   border-radius: $borderRadius;
@@ -84,7 +68,30 @@ blockquote {
   }
 }
 
+pre code {
+  max-width: 100%;
+  white-space: pre;
+  overflow: auto;
+  line-height: 2;
+  display: inline-block;
+  position: relative;
+  color: $colorWhite;
+  padding: $spacing-s;
+  margin: $spacing-s 0;
+  box-shadow: 0px 5px 10px #333333;
+  & > * {
+    max-width: 100%;
+  }
+}
+
 blockquote {
+  line-height: 2;
+  display: inline-block;
+  position: relative;
+  color: $colorWhite;
+  padding: $spacing-s;
+  margin: $spacing-s 0;
+  box-shadow: 0px 5px 10px #333333;
   & > * {
     color: $colorWhite;
     font-size: #{$fontSize + 0.5rem};
