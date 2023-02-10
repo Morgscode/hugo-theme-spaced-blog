@@ -19,7 +19,7 @@ Main features:
 - Page search
 - Mobile responsive
 - Banner images
-- Main post author accreditation
+- Blog author post accreditation
 
 ## Getting started
 
