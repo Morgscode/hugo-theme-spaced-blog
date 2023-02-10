@@ -11,7 +11,3 @@ $spacing-l: 3rem;
 /* design features */
 $borderRadius: 6px;
 $boxShadow: 0px 3px 6px $colorBlack;
-
-@media (prefers-color-scheme: dark) {
-  $boxShadow: 0px 3px 6px $colorWhite;
-}

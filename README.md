@@ -92,14 +92,14 @@ You can customise the theme colors from your sites config.
 
 ```toml
 [params.colors]
-    black = "#222222"
-    white = "#fafafa"
-    grey = "#dcdde1"
-    red = "#e84118"
-    blue = "#00a8ff"
-    green = "#4cd137"
-    yellow = "#fbc531"
-    purple = "#9c88ff"
+  black = "#222222"
+  white = "#fafafa"
+  grey = "#dcdde1"
+  red = "#e84118"
+  blue = "#00a8ff"
+  green = "#4cd137"
+  yellow = "#fbc531"
+  purple = "#9c88ff"
 ```
 
 #### Site icon (favicon)
