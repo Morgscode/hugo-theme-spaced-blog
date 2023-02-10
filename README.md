@@ -1,4 +1,4 @@
-# spaced blog theme
+# Spaced Blog Theme
 
 A beautifully minimalistic Hugo theme for blogs. With dark mode, page search and a11y out of the box.
 
@@ -126,7 +126,7 @@ To active the sidebar set the `usesidebar` site param to `true` in your `config.
   useSidebar = true
 ```
 
-### Site Icon (favicon)
+#### Site Icon (favicon)
 
 The theme ships with a default site icon (favicon) that is used in the tab in your browser but also the shortcut icon on mobile devices. To use your own favicon, just add it 
 to your sites assets directory
