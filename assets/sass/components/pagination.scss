@@ -3,7 +3,7 @@
     list-style: none;
     &-item {
       display: inline-block;
-      background-color: darken($colorWhite, 10);
+      border: 2px solid $colorBlack;
       border-radius: $borderRadius;
       &-link {
         color: $colorBlack;
@@ -21,7 +21,7 @@
   .pagination {
     &-list {
       &-item {
-        background-color: darken($colorBlack, 10);
+        border: 2px solid $colorWhite;
         &-link {
           color: $colorWhite;
           &:visited {
