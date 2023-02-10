@@ -15,14 +15,19 @@
         font-size: 6vh;
         color: $colorBlack;
         & > a {
+          color: $colorBlack;
           font-family: $titleFont;
         }
       }
       &-link {
         a {
+          color: $colorBlack;
           display: inline-block;
           text-decoration: none;
           font-family: $titleFont;
+          border: 2px solid $colorBlack;
+          border-radius: $borderRadius;
+          padding: #{$spacing-s / 4} #{$spacing-s / 2};
           font-weight: 600;
           font-size: 2rem;
         }
@@ -73,7 +78,7 @@
 
 .tag {
   display: inline-block;
-  background-color: darken($colorWhite, 20);
+  border: 2px solid $colorBlack;
   border-radius: $borderRadius;
   padding: #{$spacing-s / 4} #{$spacing-s / 2};
   color: $colorBlack;
@@ -89,9 +94,16 @@
         }
         &-title {
           color: $colorWhite;
+          & > a {
+            color: $colorWhite;
+          }
         }
         &-link {
           color: $colorWhite;
+          & > a {
+            color: $colorWhite;
+            border: 2px solid $colorWhite;
+          }
         }
       }
     }
@@ -105,7 +117,7 @@
   }
 
   .tag {
-    background-color: darken($colorWhite, 20);
- 
+    color: $colorWhite;
+    border: 2px solid $colorWhite;
   }
 }
