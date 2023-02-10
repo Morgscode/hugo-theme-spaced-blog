@@ -88,6 +88,17 @@ The basic menu structure you'll need for this theme is:
     weight = 3
 ```
 
+#### Site Icon (favicon)
+
+The theme ships with a default site icon (favicon) that is used in the tab in your browser but also the shortcut icon on mobile devices. To use your own favicon, just add it 
+to your sites assets directory
+
+The theme expects a png file to be used with an aspect ration of 1:1.
+
+```
+/assets/images/favicon.png
+```
+
 #### Cover images
 
 To use cover images for the blog: set the `useCover` param to `true`.
@@ -124,17 +135,6 @@ To active the sidebar set the `usesidebar` site param to `true` in your `config.
 ```toml
 [params]
   useSidebar = true
-```
-
-#### Site Icon (favicon)
-
-The theme ships with a default site icon (favicon) that is used in the tab in your browser but also the shortcut icon on mobile devices. To use your own favicon, just add it 
-to your sites assets directory
-
-The theme expects a png file to be used with an aspect ration of 1:1.
-
-```
-/assets/images/favicon.png
 ```
 
 ## License
