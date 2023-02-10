@@ -18,8 +18,9 @@ Main features:
 - a11y support
 - Page search
 - Mobile responsive
-- Banner images
 - Blog author accreditation
+- Configurable colors
+- Configurable banner images
 
 ## Installation
 
