@@ -21,9 +21,7 @@ Main features:
 - Banner images
 - Blog author accreditation
 
-## Getting started
-
-### Installation
+## Installation
 
 Create a new Hugo site:
 
@@ -44,9 +42,9 @@ Add this line in the `config.toml` file:
 theme = "spaced-blog"
 ```
 
-### Configuration
+## Configuration
 
-#### Site params
+### Site params
 
 In your `config.toml` file, define the following variables in `params`:
 
@@ -88,7 +86,23 @@ The basic menu structure you'll need for this theme is:
     weight = 3
 ```
 
-#### Site Icon (favicon)
+#### Site colors
+
+You can customise the theme colors from your sites config.
+
+```toml
+[params.colors]
+    black = "#2f3640"
+    white = "#fafafa"
+    grey = "#dcdde1"
+    red = "#e84118"
+    blue = "#00a8ff"
+    green = "#4cd137"
+    yellow = "#fbc531"
+    purple = "#9c88ff"
+```
+
+#### Site icon (favicon)
 
 The theme ships with a default site icon (favicon) that is used in the tab in your browser but also the shortcut icon on mobile devices. To use your own favicon, just add it 
 to your sites assets directory `/assets/images/favicon.png`.

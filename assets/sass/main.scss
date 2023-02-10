@@ -1,3 +1,12 @@
+/* colors */
+$colorBlack: {{ .Site.Params.colors.black | default "#2f3640"}};
+$colorWhite: {{ .Site.Params.colors.white | default "#fafafa"}};
+$colorGrey: {{ .Site.Params.colors.grey | default "#dcdde1"}};
+$colorRed:  {{ .Site.Params.colors.red | default "#e84118"}};
+$colorBlue: {{ .Site.Params.colors.blue | default "#00a8ff"}};
+$colorGreen: {{ .Site.Params.colors.green | default "#4cd137"}};
+$colorYellow: {{ .Site.Params.colors.yellow | default "#fbc531"}};
+$colorPurple: {{ .Site.Params.colors.purple | default "#9c88ff"}};
 // base
 @import "./base/variables.scss";
 @import "./base/base.scss";
