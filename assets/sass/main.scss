@@ -1,5 +1,5 @@
 /* colors */
-$colorBlack: {{ .Site.Params.colors.black | default "#2f3640"}};
+$colorBlack: {{ .Site.Params.colors.black | default "#222222"}};
 $colorWhite: {{ .Site.Params.colors.white | default "#fafafa"}};
 $colorGrey: {{ .Site.Params.colors.grey | default "#dcdde1"}};
 $colorRed:  {{ .Site.Params.colors.red | default "#e84118"}};

@@ -92,7 +92,7 @@ You can customise the theme colors from your sites config.
 
 ```toml
 [params.colors]
-    black = "#2f3640"
+    black = "#222222"
     white = "#fafafa"
     grey = "#dcdde1"
     red = "#e84118"
