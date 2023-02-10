@@ -12,4 +12,9 @@
   <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
   {{ $syntax := resources.Get "css/syntax.css" | resources.Minify | resources.Fingerprint -}}
   <link rel="stylesheet" href="{{ $syntax.RelPermalink }}" />
+  {{ $image := resources.GetMatch "images/favicon.png"}}
+  {{ if $image }}
+    <link rel="icon" type="image/png" href="{{ $image.RelPermalink }}" />
+    <link rel="shortcut icon" type="image/png" href="{{ $image.RelPermalink }}" />
+  {{ end }}
 </head>
