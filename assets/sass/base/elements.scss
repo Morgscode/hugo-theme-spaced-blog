@@ -130,6 +130,8 @@ a {
 }
 
 label {
+  color: $colorBlack;
+  font-family: $titleFont;
   display: block;
   line-height: normal;
   margin-bottom: #{$spacing-s / 2};
@@ -139,13 +141,19 @@ input {
   display: inline-block;
   padding: #{$spacing-s / 2};
   border-radius: $borderRadius;
-  border: none;
+  border: 2px solid $colorBlack;
   margin-bottom: #{$spacing-s / 2};
+  background-color: transparent;
+  color: $colorBlack;
 }
 
 input[type='submit'], button {
   cursor: pointer;
   padding: #{$spacing-s / 2} #{$spacing-m / 2};
+  background-color: transparent;
+  font-family: $titleFont;
+  font-size: #{$fontSize + 0.15rem};
+  font-weight: 700;
 }
 
 /* width */
@@ -199,4 +207,14 @@ input[type='submit'], button {
   em {
     background-color: darken($colorBlack, 10);
   }
+
+  label {
+    color: $colorWhite;
+  }
+  
+  input {
+    border: 2px solid $colorWhite;
+    color: $colorWhite;
+  }
+
 }
