@@ -19,7 +19,7 @@ Main features:
 - Page search
 - Mobile responsive
 - Banner images
-- Blog author post accreditation
+- Blog author accreditation
 
 ## Getting started
 
@@ -91,11 +91,7 @@ The basic menu structure you'll need for this theme is:
 #### Site Icon (favicon)
 
 The theme ships with a default site icon (favicon) that is used in the tab in your browser but also the shortcut icon on mobile devices. To use your own favicon, just add it 
-to your sites assets directory
-
-```
-/assets/images/favicon.png
-```
+to your sites assets directory `/assets/images/favicon.png`
 
 The theme expects a png file to be used. Favicons are best kept with an aspect ratio of 1:1.
 
