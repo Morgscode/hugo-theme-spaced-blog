@@ -126,6 +126,17 @@ To active the sidebar set the `usesidebar` site param to `true` in your `config.
   useSidebar = true
 ```
 
+### Site Icon (favicon)
+
+The theme ships with a default site icon (favicon) that is used in the tab in your browser but also the shortcut icon on mobile devices. To use your own favicon, just add it 
+to your sites assets directory
+
+The theme expects a png file to be used with an aspect ration of 1:1.
+
+```
+/assets/images/favicon.png
+```
+
 ## License
 
 This theme is released under the [**MIT**](/LICENSE.md) License.
