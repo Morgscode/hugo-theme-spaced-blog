@@ -78,7 +78,7 @@ pre code {
   color: $colorWhite;
   padding: $spacing-s;
   margin: $spacing-s 0;
-  box-shadow: 0px 5px 10px #333333;
+  box-shadow: 0px 5px 10px darken($colorBlack, 10);
   & > * {
     max-width: 100%;
   }
@@ -106,11 +106,14 @@ blockquote {
 
 ol,
 ul {
+  display: block;
   list-style-position: inside;
+  margin: $spacing-s 0;
   li {
+    line-height: 1.5;
     font-family: $bodyFont;
     font-size: $fontSize;
-    color: $colorBlack;
+    color: $colorWhite;
     font-weight: 400;
   }
 }
@@ -137,7 +140,7 @@ label {
   margin-bottom: #{$spacing-s / 2};
 }
 
-input {
+input, textarea {
   display: inline-block;
   padding: #{$spacing-s / 2};
   border-radius: $borderRadius;
@@ -154,6 +157,12 @@ input[type='submit'], button {
   font-family: $titleFont;
   font-size: #{$fontSize + 0.15rem};
   font-weight: 700;
+}
+
+button {
+  border: 2px solid $colorBlack;
+  color: $colorBlack;
+  border-radius: $borderRadius;
 }
 
 /* width */
@@ -212,9 +221,15 @@ input[type='submit'], button {
     color: $colorWhite;
   }
   
-  input {
+  input, textarea {
     border: 2px solid $colorWhite;
     color: $colorWhite;
   }
 
+  button {
+    color: $colorWhite;
+    border: 2px solid $colorWhite;
+  }
+
 }
+
