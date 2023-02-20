@@ -169,6 +169,11 @@ img {
   max-width: 100%;
 }
 
+figure {
+  max-width: 100%;
+  margin-bottom: $spacing-m;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 15px;
