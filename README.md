@@ -150,4 +150,4 @@ To active the sidebar set the `usesidebar` site param to `true` in your `config.
 
 ## License
 
-This theme is released under the [**MIT**](/LICENSE.md) License.
+This theme is released under the [**MIT**](https://github.com/Morgscode/hugo-theme-spaced-blog/blob/master/LICENSE) License.
