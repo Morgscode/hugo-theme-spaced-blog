@@ -6,6 +6,7 @@
       padding: #{$spacing-l / 2};
       border-radius: $borderRadius;
       background-color: darken($colorWhite, 10);
+      color: $colorBlack;
       &:last-child {
         margin-bottom: 0px;
       }
@@ -90,6 +91,7 @@
     &-list {
       &-item {
         background-color: darken($colorBlack, 10);
+        color: $colorWhite;
         &:last-child {
           margin-bottom: 0px;
         }
