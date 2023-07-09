@@ -6,9 +6,10 @@ TODOS:
 
 - Add author social media icon support
 - Add about the author block for single post
-- Add `copy to clipboard` for block-level code elements
+- Add support for Github-like `copy to clipboard` for block-level code elements
 - Add support for single post author override
 - Add support for multiple authors per post
+- Add support for lazyloading images
 
 ![Intro](https://github.com/Morgscode/hugo-theme-spaced-blog/blob/master/images/cover.png)
 
