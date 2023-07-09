@@ -88,6 +88,8 @@ The basic menu structure you'll need for this theme is:
     weight = 3
 ```
 
+[Read the Hugo documentation](https://gohugo.io/content-management/menus/#readout) for more informations about menus.
+
 #### Site colors
 
 You can customise the theme colors from your sites config.
@@ -126,12 +128,10 @@ The `cover-image.html` template uses a cover image hierarchy which goes as:
 
 1. `cover.(png|jpg)` in `page bundle`.
 2. The `coverLocation` site param.
-3. A `jpg` image in the sites `assets/images` directory.
+3. A `.jpg` image in the site's `assets/images` directory.
 4. a `.png` image in the site's `assets/images` directory.
 
 To add a default cover image for a specific page - place an image named `cover.jpg` in the page bundle.
-
-[Read the Hugo documentation](https://gohugo.io/content-management/menus/#readout) for more informations about menus.
 
 #### syntax highlighting
 
