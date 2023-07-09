@@ -3,34 +3,34 @@
   <!-- check for cover image ( Page bundle image - JPG ) -->
   {{ $image := .Resources.GetMatch "cover.jpg" }}
   {{ if $image }}
-  {{- partial "banner-image.html" (dict "image" $image) -}}
+  {{- partial "cover-image-element.html" (dict "image" $image) -}}
   {{ else }}
   <!-- check for cover image ( Page bundle image - PNG ) -->
   {{ $image := .Resources.GetMatch "cover.png" }}
   {{ if $image }}
-  {{- partial "banner-image.html" (dict "image" $image) -}}
+  {{- partial "cover-image-element.html" (dict "image" $image) -}}
   {{ else }}
   <!-- check for cover image ( Page Param Setting ) -->
   {{ $cover := .Params.coverLocation }}
   {{ $image := resources.GetMatch $cover }}
   {{ if $image }}
-  {{- partial "banner-image.html" (dict "image" $image) -}}
+  {{- partial "cover-image-element.html" (dict "image" $image) -}}
   {{ else }}
   <!-- check for cover image ( Site Param Setting ) -->
   {{ $cover := .Site.Params.coverLocation }}
   {{ $image := resources.GetMatch $cover }}
   {{ if $image }}
-  {{- partial "banner-image.html" (dict "image" $image) -}}
+  {{- partial "cover-image-element.html" (dict "image" $image) -}}
   {{ else }}
   <!-- check for cover image ( Site Asset - JPG ) -->
   {{ $image := resources.GetMatch "images/blog-cover.jpg"}}
   {{ if $image }}
-  {{- partial "banner-image.html" (dict "image" $image) -}}
+  {{- partial "cover-image-element.html" (dict "image" $image) -}}
   {{ else }}
   <!-- check for cover image ( Site Asset - PNG ) -->
   {{ $image := resources.GetMatch "images/blog-cover.png"}}
   {{ if $image }}
-  {{- partial "banner-image.html" (dict "image" $image) -}}
+  {{- partial "cover-image-element.html" (dict "image" $image) -}}
   {{ else }}
   <!-- no image set notice -->
   <div class="p-3 text-center">NO BANNER IMAGE SET</div>
