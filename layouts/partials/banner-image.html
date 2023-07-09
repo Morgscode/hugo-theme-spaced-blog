@@ -1,4 +1,5 @@
 {{ $image := .image }}
 <div class="image-wpr p-l-m p-r-m">
-  <div class="image banner-image" style="background-image: url('{{ $image.RelPermalink | safeURL }}');"></div>
+  <div class="image banner-image" srcset="{{ $image.RelPermalink | safeURL }}"
+    style="background-image: url('{{ $image.RelPermalink | safeURL }}');"></div>
 </div>
