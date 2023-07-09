@@ -51,6 +51,7 @@ In your `config.toml` file, define the following variables in `params`:
 
 - `description` = This will be the default html meta description for the blog and it's homepage. It can be overridden by setting a description in the front-matter of any page or post.
 - `useCover`: wether or not you want to use a banner images for the blog and its posts
+- `coverLocation`: The location of the cover file you'd like to use for the blog
 - `[[params.author]]`
 - `[[params.author]]name`: The name of the primary blog author
 - `[[params.author]]description`: The primary blog author's description
@@ -119,7 +120,14 @@ To use cover images for the blog: set the `useCover` param to `true`.
   useCover = true
 ```
 
-To add a default cover image for your entire blog, name your image `blog-cover.jpg` and place in `assets/images`.
+To add a default cover image for your entire blog, name your image `blog-cover.(jpg|png)` and place in `assets/images`.
+
+The `cover-image.html` template uses a cover image hierarchy which goes as: 
+
+1. `cover.(png|jpg)` in `page bundle`.
+2. The `coverLocation` site param.
+3. A `jpg` image in the sites `assets/images` directory.
+4. a `.png` image in the site's `assets/images` directory.
 
 To add a default cover image for a specific page - place an image named `cover.jpg` in the page bundle.
 
