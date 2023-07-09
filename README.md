@@ -2,15 +2,6 @@
 
 A beautifully minimalistic Hugo theme for blogs. With dark mode, page search and a11y out of the box.
 
-TODOS:
-
-- Add author social media icon support
-- Add about the author block for single post
-- Add support for Github-like `copy to clipboard` for block-level code elements
-- Add support for single post author override
-- Add support for multiple authors per post
-- Add support for lazyloading images
-
 ![Intro](https://github.com/Morgscode/hugo-theme-spaced-blog/raw/master/images/cover.png)
 
 Main features:
@@ -176,3 +167,12 @@ Load these into your site config like you would any other Hugo site.
 ## License
 
 This theme is released under the [**MIT**](https://github.com/Morgscode/hugo-theme-spaced-blog/blob/master/LICENSE) License.
+
+## TODOS:
+
+- Add author social media icon support
+- Add about the author block for single post
+- Add support for Github-like `copy to clipboard` for block-level code elements
+- Add support for single post author override
+- Add support for multiple authors per post
+- Add support for lazyloading images
