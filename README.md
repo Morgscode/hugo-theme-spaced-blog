@@ -21,7 +21,7 @@ Main features:
 - Mobile responsive
 - Blog author accreditation
 - Configurable colors
-- Configurable banner images
+- Configurable cover images
 
 ## Installation
 
@@ -32,6 +32,13 @@ $ hugo new site [path]
 ```
 
 Clone this repository into `themes/` directory:
+
+```bash
+$ cd [path]
+$ git clone https://github.com/Morgscode/hugo-theme-spaced-blog.git themes/spaced-blog
+```
+
+Or if you're version controlling your website - you can add it as a submodule
 
 ```bash
 $ cd [path]
@@ -51,7 +58,7 @@ theme = "spaced-blog"
 In your `config.toml` file, define the following variables in `params`:
 
 - `description` = This will be the default html meta description for the blog and it's homepage. It can be overridden by setting a description in the front-matter of any page or post.
-- `useCover`: wether or not you want to use a banner images for the blog and its posts
+- `useCover`: wether or not you want to use a cover images for the blog and its posts
 - `coverLocation`: The location of the cover file you'd like to use for the blog
 - `[[params.author]]`
 - `[[params.author]]name`: The name of the primary blog author
@@ -110,9 +117,9 @@ You can customise the theme colors from your sites config.
 #### Site icon (favicon)
 
 The theme ships with a default site icon (favicon) that is used in the tab in your browser but also the shortcut icon on mobile devices. To use your own favicon, just add it 
-to your sites assets directory `/assets/images/favicon.png`.
+to your sites assets directory `/assets/images/favicon.(png|ico)`.
 
-The theme expects a `.png` file to be used. Favicons are best kept with an aspect ratio of `1:1`.
+Favicons are best kept with an aspect ratio of `1:1`.
 
 #### Cover images
 
@@ -128,11 +135,12 @@ To add a default cover image for your entire blog, name your image `blog-cover.(
 The `cover-image.html` template uses a cover image hierarchy which goes as: 
 
 1. `cover.(png|jpg)` in `page bundle`.
-2. The `coverLocation` site param.
-3. A `.jpg` image in the site's `assets/images` directory.
-4. a `.png` image in the site's `assets/images` directory.
+2. The `coverLocation` page param.
+3. The `coverLocation` site param.
+4. A `.jpg` image in the site's `assets/images` directory.
+5. a `.png` image in the site's `assets/images` directory.
 
-To add a default cover image for a specific page - place an image named `cover.jpg` in the page bundle.
+The template use the `coverLocation` params with the `resources.GetMatch` Hugo template funcions which looks in the site's `/assets` directory first and then the theme's `/assets` directory.
 
 #### syntax highlighting
 
@@ -156,6 +164,12 @@ To active the sidebar set the `usesidebar` site param to `true` in your `config.
 [params]
   useSidebar = true
 ```
+
+#### Google analytics, opengraph and twitter cards
+
+Load these in like you would any other Hugo theme with standard support for these tools. 
+
+[Read about Internal templates in Hugo](https://gohugo.io/templates/internal/)
 
 ## License
 

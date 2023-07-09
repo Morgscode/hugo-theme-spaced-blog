@@ -10,6 +10,12 @@
   {{ if $image }}
   {{- partial "banner-image.html" (dict "image" $image) -}}
   {{ else }}
+  <!-- check for cover image ( Page Param Setting ) -->
+  {{ $cover := .Params.coverLocation }}
+  {{ $image := resources.GetMatch $cover }}
+  {{ if $image }}
+  {{- partial "banner-image.html" (dict "image" $image) -}}
+  {{ else }}
   <!-- check for cover image ( Site Param Setting ) -->
   {{ $cover := .Site.Params.coverLocation }}
   {{ $image := resources.GetMatch $cover }}
@@ -28,6 +34,7 @@
   {{ else }}
   <!-- no image set notice -->
   <div class="p-3 text-center">NO BANNER IMAGE SET</div>
+  {{ end }}
   {{ end }}
   {{ end }}
   {{ end }}
