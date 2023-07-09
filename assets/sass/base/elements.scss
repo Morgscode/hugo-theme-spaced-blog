@@ -53,7 +53,7 @@ blockquote {
   background-color: darken($colorBlack, 10);
   color: $colorWhite;
   line-height: 1.5;
-  border-radius: $borderRadius;
+  border-radius: #{$borderRadius / 2};
   padding: #{$spacing-s / 5} $spacing-s;
   white-space: normal;
 
@@ -109,7 +109,8 @@ blockquote {
   }
 }
 
-p {
+p,
+li {
 
   code,
   blockquote {
@@ -126,10 +127,10 @@ ul {
   margin: $spacing-s 0;
 
   li {
-    line-height: 1.5;
+    line-height: 2;
     font-family: $bodyFont;
     font-size: $fontSize;
-    color: $colorWhite;
+    color: $colorBlack;
     font-weight: 400;
   }
 }
