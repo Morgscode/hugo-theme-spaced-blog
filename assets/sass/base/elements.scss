@@ -39,6 +39,7 @@ p {
   font-weight: 400;
   line-height: 2;
   font-family: $bodyFont;
+
   &:not(:last-child) {
     margin-bottom: $spacing-s;
   }
@@ -55,6 +56,7 @@ blockquote {
   border-radius: $borderRadius;
   padding: #{$spacing-s / 5} $spacing-s;
   white-space: normal;
+
   &::before {
     display: inline-block;
     background-color: $colorGreen;
@@ -79,7 +81,8 @@ pre code {
   padding: $spacing-s;
   margin: $spacing-s 0;
   box-shadow: 0px 5px 10px darken($colorBlack, 10);
-  & > * {
+
+  &>* {
     max-width: 100%;
   }
 }
@@ -92,15 +95,27 @@ blockquote {
   padding: $spacing-s;
   margin: $spacing-s 0;
   box-shadow: 0px 5px 10px #333333;
-  & > * {
+
+  &>* {
     color: $colorWhite;
     font-size: #{$fontSize + 0.5rem};
     line-height: 1.5;
     background-color: transparent;
   }
+
   em {
     display: block;
     background-color: transparent;
+  }
+}
+
+p {
+
+  code,
+  blockquote {
+    &::before {
+      display: none;
+    }
   }
 }
 
@@ -109,6 +124,7 @@ ul {
   display: block;
   list-style-position: inside;
   margin: $spacing-s 0;
+
   li {
     line-height: 1.5;
     font-family: $bodyFont;
@@ -127,6 +143,7 @@ a {
   color: $colorBlue;
   text-decoration: none;
   font-family: $bodyFont;
+
   &:visited {
     color: $colorPurple;
   }
@@ -140,7 +157,8 @@ label {
   margin-bottom: #{$spacing-s / 2};
 }
 
-input, textarea {
+input,
+textarea {
   display: inline-block;
   padding: #{$spacing-s / 2};
   border-radius: $borderRadius;
@@ -150,7 +168,8 @@ input, textarea {
   color: $colorBlack;
 }
 
-input[type='submit'], button {
+input[type='submit'],
+button {
   cursor: pointer;
   padding: #{$spacing-s / 2} #{$spacing-m / 2};
   background-color: transparent;
@@ -191,6 +210,7 @@ figure {
 }
 
 @media (prefers-color-scheme: dark) {
+
   h1,
   h2,
   h3,
@@ -229,8 +249,9 @@ figure {
   label {
     color: $colorWhite;
   }
-  
-  input, textarea {
+
+  input,
+  textarea {
     border: 2px solid $colorWhite;
     color: $colorWhite;
   }
@@ -241,4 +262,3 @@ figure {
   }
 
 }
-

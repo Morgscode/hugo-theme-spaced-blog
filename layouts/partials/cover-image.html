@@ -1,15 +1,15 @@
 {{ if .Page.Site.Params.usecover }}
-<div class="p-t-s p-b-s">
+<div class="p-t-l">
   <!-- check for featured image -->
   {{ $image := .Resources.GetMatch "cover.jpg" }}
   {{ if $image }}
-  <div class="image-wpr">
+  <div class="image-wpr p-l-s p-r-s">
     <div class="image banner-image" style="background-image: url('{{ $image.RelPermalink | safeURL }}');"></div>
   </div>
   {{ else }}
   {{ $image := .Resources.GetMatch "cover.png" }}
   {{ if $image }}
-  <div class="image-wpr">
+  <div class="image-wpr p-l-s p-r-s">
     <div class="image banner-image" style="background-image: url('{{ $image.RelPermalink | safeURL }}');"></div>
   </div>
   {{ else }}
@@ -17,20 +17,20 @@
   {{ $cover := .Site.Params.coverLocation }}
   {{ $image := resources.GetMatch $cover }}
   {{ if $image }}
-  <div class="image-wpr">
+  <div class="image-wpr p-l-s p-r-s">
     <div class="image banner-image" style="background-image: url('{{ $image.RelPermalink | safeURL }}');"></div>
   </div>
   {{ else }}
   {{ $image := resources.GetMatch "images/blog-cover.jpg"}}
   {{ if $image }}
-  <div class="image-wpr">
+  <div class="image-wpr p-l-s p-r-s">
     <div class="image banner-image" style="background-image: url('{{ $image.RelPermalink | safeURL }}');"></div>
   </div>
   {{ else }}
   <!-- check for blog cover image -->
   {{ $image := resources.GetMatch "images/blog-cover.png"}}
   {{ if $image }}
-  <div class="image-wpr">
+  <div class="image-wpr p-l-s p-r-s">
     <div class="image banner-image" style="background-image: url('{{ $image.RelPermalink | safeURL }}');"></div>
   </div>
   {{ else }}

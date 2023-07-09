@@ -8,4 +8,12 @@
 
 .banner-image {
   padding-bottom: 25%;
+  border-radius: $borderRadius;
+  box-shadow: $boxShadowBottom;
+}
+
+figure {
+  img {
+    box-shadow: $boxShadow;
+  }
 }

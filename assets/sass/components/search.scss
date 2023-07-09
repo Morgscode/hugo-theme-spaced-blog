@@ -3,18 +3,22 @@
     label {
       font-size: 4vh;
     }
+
     input[type='search'] {
       width: 100%;
     }
   }
+
   &-results {
     max-height: 600px;
     overflow-y: auto;
+
     .search-result {
       border-radius: $borderRadius;
       padding: $spacing-s;
       background-color: rgba(lighten($colorWhite, 10), 0.5);
       margin-bottom: 5px;
+
       a {
         display: block;
       }
