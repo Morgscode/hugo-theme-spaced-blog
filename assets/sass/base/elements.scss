@@ -192,6 +192,15 @@ img {
 figure {
   max-width: 100%;
   margin-bottom: $spacing-m;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-top: 1px solid darken($colorWhite, 20);
+  border-bottom: 1px solid darken($colorWhite, 20);
+
+  img {
+    box-shadow: $boxShadow;
+    margin-bottom: 1rem;
+  }
 }
 
 /* width */
@@ -260,6 +269,10 @@ figure {
   button {
     color: $colorWhite;
     border: 2px solid $colorWhite;
+  }
+
+  figure {
+    border-color: lighten($colorBlack, 10);
   }
 
 }

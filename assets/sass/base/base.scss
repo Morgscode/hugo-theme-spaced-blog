@@ -15,10 +15,8 @@ body {
   max-width: 100%;
   width: 100%;
   min-height: 100vh;
-  overflow-x: hidden;
   font-family: $bodyFont;
   color: $colorBlack;
-  position: relative;
   background-color: $colorWhite;
 }
 
@@ -32,6 +30,7 @@ body {
   color: $colorBlack;
   opacity: 0;
 }
+
 .skip-to-main-content-link:focus {
   top: 2rem;
   left: 2rem;
@@ -39,6 +38,7 @@ body {
 }
 
 @media (prefers-color-scheme: dark) {
+
   body,
   html {
     background-color: rgba($colorBlack, 0.9);
@@ -47,7 +47,7 @@ body {
 
   .skip-to-main-content-link {
     background-color: $colorBlack;
-    border: 2px solid $colorWhite;
+    border-color: $colorWhite;
     color: $colorWhite;
   }
 }

@@ -11,21 +11,3 @@
   border-radius: $borderRadius;
   box-shadow: $boxShadowBottom;
 }
-
-figure {
-  img {
-    box-shadow: $boxShadow;
-    margin-bottom: 1rem;
-  }
-
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  border-top: 1px solid darken($colorWhite, 20);
-  border-bottom: 1px solid darken($colorWhite, 20);
-}
-
-@media (prefers-color-scheme: dark) {
-  figure {
-    border-bottom: 1px solid lighten($colorBlack, 10);
-  }
-}
