@@ -137,10 +137,10 @@ The `cover-image.html` template uses a cover image hierarchy which goes as:
 1. `cover.(png|jpg)` in `page bundle`.
 2. The `coverLocation` page param.
 3. The `coverLocation` site param.
-4. A `.jpg` image in the site's `assets/images` directory.
-5. a `.png` image in the site's `assets/images` directory.
+4. A `.jpg` image in the `assets/images` directory.
+5. a `.png` image in the `assets/images` directory.
 
-The template use the `coverLocation` params with the `resources.GetMatch` Hugo template funcions which looks in the site's `/assets` directory first and then the theme's `/assets` directory.
+The templates use the `coverLocation` params with the `resources.GetMatch` Hugo template funcions which looks in the site's `/assets` directory first and then the theme's `/assets` directory.
 
 #### syntax highlighting
 
@@ -156,7 +156,7 @@ The theme's base layout pulls in a css stylesheet which is a tiny variation on t
 
 #### Sidebar 
 
-The theme ships with a sidebar comes with a search form which has %like% behaviour for all of your page names.
+The theme ships with a sidebar comes with a search form which has `%like%` behaviour for all of your page names.
 
 To active the sidebar set the `usesidebar` site param to `true` in your `config.toml`
 
@@ -167,7 +167,9 @@ To active the sidebar set the `usesidebar` site param to `true` in your `config.
 
 #### Google analytics, opengraph and twitter cards
 
-Load these in like you would any other Hugo theme with standard support for these tools. 
+This theme ships with standard support for Hugo's Internal templates. 
+
+Load these into your site config like you would any other Hugo site. 
 
 [Read about Internal templates in Hugo](https://gohugo.io/templates/internal/)
 
