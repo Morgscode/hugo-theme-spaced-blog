@@ -10,5 +10,5 @@ $spacing-l: 3rem;
 
 /* design features */
 $borderRadius: 12px;
-$boxShadow: 0px 3px 6px $colorBlack;
+$boxShadow: 0 3px 10px rgba($colorBlack, 0.5);
 $boxShadowBottom: 0px 15px 15px -15px darken($colorBlack, 10);
