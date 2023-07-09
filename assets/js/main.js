@@ -1,5 +1,4 @@
-window.addEventListener('load', () => {
-
+window.addEventListener('DOMContentLoaded', () => {
   const nav = (() => {
     const nav = document.querySelector('.main-navigation');
     const navOpen = document.querySelector('.mobile-nav-open');
@@ -9,21 +8,24 @@ window.addEventListener('load', () => {
   })();
 
   const search = (() => {
-
-    const searchResult = (result) => `<div class="search-result"><a href="${result.url}">${result.name}</a></div>`;
+    const searchResult = (result) =>
+      `<div class="search-result"><a href="${result.url}">${result.name}</a></div>`;
     const search = document.querySelector('#search-form');
     const searchResults = document.querySelector('#search-results');
 
     search.addEventListener('submit', (e) => {
-      e.preventDefault(); 
+      e.preventDefault();
       searchResults.innerHTML = '';
       const output = document.createElement('div');
       const data = new FormData(e.target);
       const query = data.get('query');
       const pages = JSON.parse(SITE_DATA.pages);
-      const results = Array.from(pages)?.filter(page => page.name.toLowerCase().includes(query.toLowerCase())) || [];
+      const results =
+        Array.from(pages)?.filter((page) =>
+          page.name.toLowerCase().includes(query.toLowerCase())
+        ) || [];
       if (results.length > 0 && query.length > 0) {
-        const markup = results.map(result => searchResult(result));
+        const markup = results.map((result) => searchResult(result));
         output.innerHTML = markup.join('');
         searchResults.appendChild(output);
       } else {
@@ -31,7 +33,5 @@ window.addEventListener('load', () => {
         searchResults.appendChild(output);
       }
     });
-
   })();
 });
- 
