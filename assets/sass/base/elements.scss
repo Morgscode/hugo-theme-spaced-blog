@@ -35,7 +35,7 @@ h6 {
 
 p {
   font-size: $fontSize;
-  color: $colorBlack;
+  color: lighten($colorBlack, 20);
   font-weight: 400;
   line-height: 2;
   font-family: $bodyFont;
@@ -130,7 +130,7 @@ ul {
     line-height: 2;
     font-family: $bodyFont;
     font-size: $fontSize;
-    color: $colorBlack;
+    color: lighten($colorBlack, 20);
     font-weight: 400;
   }
 }
@@ -166,7 +166,7 @@ textarea {
   border: 2px solid $colorBlack;
   margin-bottom: #{$spacing-s / 2};
   background-color: transparent;
-  color: $colorBlack;
+  color: lighten($colorBlack, 20);
 }
 
 input[type='submit'],
@@ -227,17 +227,17 @@ figure {
   h4,
   h5,
   h6 {
-    color: $colorWhite;
+    color: darken($colorWhite, 10);
   }
 
   p {
-    color: $colorWhite;
+    color: darken($colorWhite, 20);
   }
 
   ul,
   ol {
     li {
-      color: $colorWhite;
+      color: darken($colorWhite, 20);
     }
   }
 
@@ -257,13 +257,13 @@ figure {
   }
 
   label {
-    color: $colorWhite;
+    color: darken($colorWhite, 10);
   }
 
   input,
   textarea {
     border: 2px solid $colorWhite;
-    color: $colorWhite;
+    color: darken($colorWhite, 30);
   }
 
   button {
