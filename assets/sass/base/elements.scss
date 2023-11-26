@@ -167,7 +167,7 @@ textarea {
   border: 2px solid $colorBlack;
   margin-bottom: #{$spacing-s / 2};
   background-color: transparent;
-  color: lighten($colorBlack, 20);
+  color: $colorBlack;
 }
 
 input[type='submit'],
@@ -264,7 +264,7 @@ figure {
   input,
   textarea {
     border: 2px solid $colorWhite;
-    color: darken($colorWhite, 30);
+    color: $colorWhite;
   }
 
   button {
