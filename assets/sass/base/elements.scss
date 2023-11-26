@@ -4,6 +4,7 @@ h3,
 h4,
 h5,
 h6 {
+  color: $colorBlack;
   line-height: 1.25;
   font-family: $titleFont;
   font-weight: 700;
@@ -227,7 +228,7 @@ figure {
   h4,
   h5,
   h6 {
-    color: darken($colorWhite, 10);
+    color: $colorWhite;
   }
 
   p {
