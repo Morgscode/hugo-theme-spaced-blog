@@ -2,25 +2,31 @@
   &-list {
     list-style: none;
     margin-top: 0;
+
     &-item {
       padding: #{$spacing-l / 2};
       border-radius: $borderRadius;
       background-color: darken($colorWhite, 10);
       color: $colorBlack;
+
       &:last-child {
         margin-bottom: 0px;
       }
+
       span {
         font-weight: 600;
       }
+
       &-title {
         font-size: 6vh;
         color: $colorBlack;
-        & > a {
+
+        &>a {
           color: $colorBlack;
           font-family: $titleFont;
         }
       }
+
       &-link {
         a {
           color: $colorBlack;
@@ -41,36 +47,54 @@
 .post {
   &-title {
     font-size: 6vh;
-    & > a {
+
+    &>a {
       font-family: $titleFont;
     }
   }
+
   &-meta {
     border-radius: $borderRadius;
     border-bottom: 3px solid darken($colorWhite, 20);
     background-color: darken($colorWhite, 10);
+
     span {
       font-weight: 600;
     }
   }
+
   &-content {
-    & > * {
+    &>* {
       line-height: 2;
       margin-bottom: $spacing-s;
     }
-    h1, h2, h3 {
+
+    h1,
+    h2,
+    h3 {
       line-height: 1.5;
-      margin-bottom: 2rem;
+
+      &:not(:first-child) {
+        margin: 2rem auto;
+      }
+
+      &:first-child {
+        margin-bottom: 2rem;
+      }
+
     }
+
     ol,
     ul {
       margin-top: calc(#{$spacing-s} / 2);
       margin-bottom: calc(#{$spacing-s} / 2);
+
       li {
         &::marker {
           display: inline;
         }
-        & > * {
+
+        &>* {
           display: inline;
         }
       }
@@ -92,18 +116,23 @@
       &-item {
         background-color: darken($colorBlack, 10);
         color: $colorWhite;
+
         &:last-child {
           margin-bottom: 0px;
         }
+
         &-title {
           color: $colorWhite;
-          & > a {
+
+          &>a {
             color: $colorWhite;
           }
         }
+
         &-link {
           color: $colorWhite;
-          & > a {
+
+          &>a {
             color: $colorWhite;
             border: 2px solid $colorWhite;
           }
