@@ -227,17 +227,17 @@ figure {
   h4,
   h5,
   h6 {
-    color: $colorWhite;
+    color: darken($colorWhite, 10);
   }
 
   p {
-    color: $colorWhite;
+    color: darken($colorWhite, 20);
   }
 
   ul,
   ol {
     li {
-      color: $colorWhite;
+      color: darken($colorWhite, 20);
     }
   }
 
@@ -257,13 +257,13 @@ figure {
   }
 
   label {
-    color: $colorWhite;
+    color: darken($colorWhite, 10);
   }
 
   input,
   textarea {
     border: 2px solid $colorWhite;
-    color: $colorWhite;
+    color: darken($colorWhite, 30);
   }
 
   button {
