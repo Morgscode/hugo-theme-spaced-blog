@@ -35,7 +35,7 @@ h6 {
 
 p {
   font-size: $fontSize;
-  color: $colorBlack;
+  color: lighten($colorBlack, 20);
   font-weight: 400;
   line-height: 2;
   font-family: $bodyFont;
@@ -130,7 +130,7 @@ ul {
     line-height: 2;
     font-family: $bodyFont;
     font-size: $fontSize;
-    color: $colorBlack;
+    color: lighten($colorBlack, 20);
     font-weight: 400;
   }
 }
@@ -166,7 +166,7 @@ textarea {
   border: 2px solid $colorBlack;
   margin-bottom: #{$spacing-s / 2};
   background-color: transparent;
-  color: $colorBlack;
+  color: lighten($colorBlack, 20);
 }
 
 input[type='submit'],
