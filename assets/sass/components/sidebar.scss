@@ -11,6 +11,12 @@
     }
 }
 
+@media only screen and (max-width: 992px) {
+    #sidebar {
+        margin-top: $spacing-s;
+    }
+}
+
 @media (prefers-color-scheme: dark) {
     #sidebar {
         background-color: darken($colorBlack, 10);
