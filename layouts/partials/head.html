@@ -1,32 +1,29 @@
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}</title>
-  {{ range .Site.Params.author -}}
-  <meta name="author" content="{{ .name | default " Jeffrey Lebowski" }}" />
-  {{ end -}}
-  <meta name="description"
-    content="{{- if .Description -}}{{- .Description -}}{{- else -}}{{- .Site.Params.Description -}}{{- end -}}" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  {{ $style := resources.Get "sass/main.scss" | resources.ExecuteAsTemplate "sass/main.scss" . | resources.ToCSS |
-  resources.Minify | resources.Fingerprint -}}
+  {{ range .Site.Params.author -}} <meta name="author" content="{{ .name |
+  default " Jeffrey Lebowski" }}" /> {{ end -}}
+  <meta
+    name="description"
+    content="{{- if .Description -}}{{- .Description -}}{{- else -}}{{- .Site.Params.Description -}}{{- end -}}"
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  {{ $style := resources.Get "sass/main.scss" | resources.ExecuteAsTemplate
+  "sass/main.scss" . | resources.ToCSS | resources.Minify |
+  resources.Fingerprint -}}
   <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
-  {{ $syntax := resources.Get "css/syntax.css" | resources.Minify | resources.Fingerprint -}}
+  {{ $syntax := resources.Get "css/syntax.css" | resources.Minify |
+  resources.Fingerprint -}}
   <link rel="stylesheet" href="{{ $syntax.RelPermalink }}" />
-  {{ $image := resources.GetMatch "images/favicon.ico"}}
-  {{ if $image }}
+  {{ $image := resources.GetMatch "images/favicon.ico"}} {{ if $image }}
   <link rel="icon" type="image/ico" href="{{ $image.RelPermalink }}" />
   <link rel="shortcut icon" type="image/ico" href="{{ $image.RelPermalink }}" />
-  {{ else }}
-  {{ $image := resources.GetMatch "images/favicon.png"}}
-  {{ if $image }}
+  {{ else }} {{ $image := resources.GetMatch "images/favicon.png"}} {{ if $image
+  }}
   <link rel="icon" type="image/png" href="{{ $image.RelPermalink }}" />
   <link rel="shortcut icon" type="image/png" href="{{ $image.RelPermalink }}" />
-  {{ end }}
-  {{ end }}
-
-  {{ template "_internal/google_analytics.html" . }}
-  {{ template "_internal/twitter_cards.html" . }}
-  {{ template "_internal/opengraph.html" . }}
-
+  {{ end }} {{ end }} {{ template "_internal/google_analytics.html" . }} {{
+  template "_internal/twitter_cards.html" . }} {{ template
+  "_internal/opengraph.html" . }}
 </head>
